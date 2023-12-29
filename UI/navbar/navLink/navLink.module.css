@@ -1,0 +1,11 @@
+.link{
+    color: var(--offWhite) ;
+}
+.link:hover{
+    font-weight: 999;
+    text-shadow: 3px 3px 1px var(--offBlack);
+}
+.active {
+    font-weight: 999;
+    text-shadow: 3px 3px 1px var(--offBlack);
+}

@@ -11,23 +11,39 @@
     font-size: 48px;
     font-weight: 300;
     margin-top: 0;
-    margin-bottom: var(--paddingMedium);
+    margin-bottom: var(--paddingSmall);
     text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding-inline: var(--paddingMedium);
+    cursor:default;
+    border-radius: 10px;
 }
 .dash{
-    width: 100px;
-    border-bottom: 2px solid var(--offWhite);
+    width: 200px;
+    height: 3px;
+    background-color: var(--offWhite);
+    transform: skew(-60deg);
 }
 .container h2{
     font-weight: 400;
-    margin: var(--paddingMedium);
+    margin-top: var(--paddingSmall);
+    margin-bottom: var(--paddingMedium);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding-inline: var(--paddingMedium);
+    padding-block: var(--paddingSmall);
+    cursor:default;
+    border-radius: 10px;
 }
 .headShot{
-    background-image: url('/images/headshot.webp');
     height: 300px;
     width: 300px;
     background-size: cover;
     border-radius: 50%;
-    background-position: 0px -30px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.headShot img{
+    position: relative;
+    bottom: 40px;
 }
 

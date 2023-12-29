@@ -11,7 +11,9 @@ export default function Home() {
       <h1>Michael Seaman</h1>
       <div className={styles.dash}></div>
       <h2>Full-Stack Developer</h2>
-      <div className={styles.headShot}></div>
+      <div className={styles.headShot}>
+        <Image src={'/images/headshot.webp'} width={100} height={100} layout='responsive'/>
+      </div>
     </main>
   )
 }

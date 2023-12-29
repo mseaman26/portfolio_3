@@ -1,5 +1,4 @@
 "use client"
-import styles from './burgerMenu.module.css'
 import { useState } from 'react'
 import { slide as Menu } from 'react-burger-menu'
 import Link from 'next/link'

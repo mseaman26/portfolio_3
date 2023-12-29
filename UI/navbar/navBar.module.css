@@ -1,7 +1,7 @@
 .container{
     display: flex;
     background-color: var(--almostBlack);
-    color: var(--offWhite);
+
     height: 80px;
     padding-inline: var(--paddingSmall);
 }
@@ -26,7 +26,7 @@
     height: 100%;
 }
 .container a{
-    color: var(--offWhite);
+
     text-decoration: none;
 }
 .icon{

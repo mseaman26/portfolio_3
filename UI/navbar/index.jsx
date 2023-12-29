@@ -3,6 +3,7 @@ import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Link from 'next/link';
 import BurgerMenu from '../burgerMenu';
+import NavLink from './navLink';
 
 const Navbar = () =>{
     return(
@@ -17,10 +18,10 @@ const Navbar = () =>{
             </div>
             <div className={styles.navRight}>
                 <div className={styles.desktopNav}>
-                    <Link href='/'>HOME</Link>
-                    <Link href='/projects'>PROJECTS</Link>
-                    <Link href='/resume'>RESUME</Link>
-                    <Link href='/'>CONTACT</Link>
+                    <NavLink href='/' text='HOME'/>
+                    <NavLink href='/projects' text='PROJECTS'/>
+                    <NavLink href='/resume' text='RESUME'/>
+                    <NavLink href='/contact' text='CONTACT'/>
                 </div>
                 <div className={styles.mobileNav}>
                     <BurgerMenu/>
