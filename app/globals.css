@@ -5,8 +5,21 @@
   --active: #FFD233;
 
   --paddingSmall: 15px;
-  --paddingMedium: 30px
+  --paddingMedium: 30px;
+  --paddingLarge: 90px
+}
+*{
+  box-sizing: border-box;
+}
+html{
+  padding: 0px;
+  margin: 0px;
+  min-width: 100vw;
+  max-width: 100vw;
 }
 body{
+  
+  padding: 0;
   margin: 0;
+  
 }

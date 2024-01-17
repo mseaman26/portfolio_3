@@ -1,0 +1,20 @@
+.container{
+    background-color: var(--offBlack);
+    color: var(--offWhite);
+    min-height: 92vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: var(--paddingMedium);
+}
+.container h1{
+    font-size: 48px;
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: var(--paddingSmall);
+    text-align: center;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
+    padding-inline: var(--paddingMedium);
+    cursor:default;
+    border-radius: 10px;
+}

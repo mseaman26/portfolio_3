@@ -1,0 +1,7 @@
+.dash{
+    width: 200px;
+    height: 3px;
+    background-color: var(--offWhite);
+    transform: skew(-60deg);
+    margin-bottom: var(--paddingSmall);
+}

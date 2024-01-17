@@ -1,22 +1,26 @@
 .container{
     background-color: var(--offBlack);
     color: var(--offWhite);
-    min-height: 90vh;
+    min-height: 95vh;
+    position: relative;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; 
     padding: var(--paddingMedium);
-}
-.container h1{
+}  
+.michaelSeaman{
     font-size: 48px;
     font-weight: 300;
     margin-top: 0;
     margin-bottom: var(--paddingSmall);
     text-align: center;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
     padding-inline: var(--paddingMedium);
     cursor:default;
     border-radius: 10px;
+}
+ .michaelSeaman{
+
 }
 .dash{
     width: 200px;
@@ -28,7 +32,7 @@
     font-weight: 400;
     margin-top: var(--paddingSmall);
     margin-bottom: var(--paddingMedium);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
     padding-inline: var(--paddingMedium);
     padding-block: var(--paddingSmall);
     cursor:default;
@@ -46,4 +50,9 @@
     position: relative;
     bottom: 40px;
 }
+@media screen and (max-width: 576px) {
+    .michaelSeaman{
+        font-size: 35px;
+    }
+} 
 
