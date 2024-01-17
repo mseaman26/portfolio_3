@@ -1,7 +1,7 @@
 import Project from '@/app/Components/projects/Project'
 import styles from './websites.module.css'
 import Dash from '@/app/Components/dash'
-import casaSusana from '../../../public/images/CasaSusana1-ezgif.com-optimize.gif'
+import casaSusana from '../../../public/images/CasaSusana-ezgif.com-optimize.gif'
 
 const Websites = () => {
     return(
