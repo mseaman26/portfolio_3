@@ -1,11 +1,13 @@
-export const projects = [
+import { lorem } from "./lorem"
+export const websites = [
     {
         title: 'Casa Susana',
-        description: 'description',
-        image: '/images/Casa_Susana_Small.gif',
+        description: lorem,
+        gif: '/images/CasaSusana-ezgif.com-optimize.gif',
+        image: '/images/casa_still.png',
         skills: [],
         techs: [],
-        github: '/',
-        link: '/'
+        github: '',
+        link: 'https://mex-restaurant.vercel.app/'
     }
 ]

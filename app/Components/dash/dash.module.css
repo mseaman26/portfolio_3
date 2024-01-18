@@ -3,5 +3,5 @@
     height: 3px;
     background-color: var(--offWhite);
     transform: skew(-60deg);
-    margin-bottom: var(--paddingSmall);
+    margin-bottom: var(--paddingMedium);
 }

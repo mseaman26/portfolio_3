@@ -18,3 +18,9 @@
     cursor:default;
     border-radius: 10px;
 }
+@media screen and (max-width: 992px) {
+    .container h1{
+        font-size: 32px;
+        padding-inline: 0px;
+    }
+}
