@@ -14,7 +14,7 @@ export default function Home() {
       <Dash/>
       <h2>Full-Stack Developer</h2>
       <div className={styles.headShot}>
-        <Image src={'/images/headshot.webp'} width={100} height={100} layout='responsive'/>
+        <Image src={'/images/headshot.webp'} width={100} height={100} layout='responsive' alt='headshot of Michael Seaman'/>
       </div>
       <SkillsSection/>
     </main>

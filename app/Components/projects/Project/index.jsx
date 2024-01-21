@@ -4,7 +4,7 @@ import Image from 'next/image'
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 
-const Project = ({id, gif, image, title, description, link, github}) => {
+const Project = ({id, gif, image, title, description, link, github, alt}) => {
 
     const [imageDisplay, setImageDisplay] = useState('inline')
 
@@ -18,8 +18,8 @@ const Project = ({id, gif, image, title, description, link, github}) => {
         <section className={styles.container}>
             <h2>{title}</h2>
             <div className={styles.imageAndDesc}>
-                <Image src={gif} width={300} height={300}/>
-                <Image className={styles.stillImage} src={image} width={300} height={300} style={{display: imageDisplay}}></Image>
+                <Image src={gif} width={300} height={300} alt={alt} />
+                <Image className={styles.stillImage} src={image} width={300} height={300} style={{display: imageDisplay}} alt={alt}></Image>
                 <p>{description}</p>
             </div>
             <div className={styles.links}>

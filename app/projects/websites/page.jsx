@@ -12,7 +12,14 @@ const Websites = () => {
             <Dash/>
             {websites.map((project) =>{
                 return(
-                    <Project gif={project.gif} image={project.image}title ={'Casa Susana'} description={project.description} link={project.link} github={project.github}/>
+                    <Project 
+                    gif={project.gif} 
+                    image={project.image}
+                    title ={'Casa Susana'} 
+                    description={project.description} 
+                    link={project.link} 
+                    github={project.github} 
+                    alt={project.alt}/>
                 )
             })}
             

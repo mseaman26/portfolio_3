@@ -8,6 +8,18 @@ export const websites = [
         skills: [],
         techs: [],
         github: '',
+        alt: 'preview of the Casa Susana website',
+        link: 'https://mex-restaurant.vercel.app/'
+    },
+    {
+        title: 'Dr Polukoshko, Optometrist',
+        description: lorem,
+        gif: '/images/DrPolukoshkoOptometrist-ezgif.com-optimize.gif',
+        image: '/images/Polukoshko_still.png',
+        skills: [],
+        techs: [],
+        github: '',
+        alt:'preview of the polukoshko website',
         link: 'https://mex-restaurant.vercel.app/'
     }
 ]
