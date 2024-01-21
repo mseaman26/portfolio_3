@@ -91,6 +91,7 @@ const BurgerMenu = () => {
           <Menu styles={menuStyles} right onClose={()=>setIsMenuOpen(false)} onOpen={()=>setIsMenuOpen(true)} isOpen={isMenuOpen}>
               <Link href='/'>HOME</Link>
               <Link href='/projects'>PROJECTS</Link>
+              <Link href='/contact'>CONTACT</Link>
           </Menu>
       </div>
     )
