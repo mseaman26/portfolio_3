@@ -1,0 +1,16 @@
+.container{
+    background-color: rgb(82, 86, 89);
+    text-align: center;
+    color: var(--offWhite);
+    padding-top: var(--paddingMedium);
+    height: calc(100vh - 80px);
+}
+.header{
+    margin-top: 0px;
+    margin-bottom: var(--paddingMedium);
+}
+.container iframe{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}

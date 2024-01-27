@@ -20,6 +20,6 @@ export const websites = [
         techs: [],
         github: '',
         alt:'preview of the polukoshko website',
-        link: 'https://mex-restaurant.vercel.app/'
+        link: 'https://polukoshko.vercel.app/'
     }
 ]

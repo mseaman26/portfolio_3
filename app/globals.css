@@ -22,3 +22,30 @@ body{
   margin: 0;
   
 }
+.page{
+  background-color: var(--offBlack);
+  color: var(--offWhite);
+  height: calc(100vh - 80px);
+
+}.myh1{
+  font-size: 48px;
+  font-weight: 300;
+  margin-top: 0;
+  margin-bottom: var(--paddingMedium);
+  text-align: center;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
+  padding-inline: var(--paddingMedium);
+  cursor:default;
+  border-radius: 10px;
+}
+
+.myh2{
+  font-weight: 400;
+  margin-top: var(--paddingSmall);
+  margin-bottom: var(--paddingMedium);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+  padding-inline: var(--paddingMedium);
+  padding-block: var(--paddingSmall);
+  cursor:default;
+  border-radius: 10px;
+}
