@@ -80,7 +80,8 @@ const menuStyles = {
   } 
 
 const BurgerMenu = () => {
-
+    const resumeUrl = 'path/to/your/resume.pdf'
+    const uniqueQueryParam = `?nocache=${Date.now()}`
     const router = useRouter()
     const [isMenuOpen, setIsMenuOpen] = useState(false)
 
@@ -89,6 +90,7 @@ const BurgerMenu = () => {
     }, [isMenuOpen])
 
     const handleRedirect = () => {
+      window.location.reload(true); 
       router.push('images/Resume.pdf')
     }
 
@@ -98,7 +100,7 @@ const BurgerMenu = () => {
               <Link href='/'>HOME</Link>
               <Link href='/projects'>PROJECTS</Link>
               <Link href='/contact'>CONTACT</Link>
-              <Link href='/images/Resume.pdf' onClick={handleRedirect}>RESUME</Link>
+              <div href={`${resumeUrl}${uniqueQueryParam}`} onClick={handleRedirect}>RESUME</div>
           </Menu>
       </div>
     )
