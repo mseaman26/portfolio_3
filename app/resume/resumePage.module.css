@@ -16,3 +16,13 @@
     justify-content: center;
     max-width: 100%;
 }
+.container iframe{
+    width: 835px;
+    max-width: 100vw;
+    height: 4000px
+}
+.c25, .doc-content{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
