@@ -86,7 +86,7 @@ const BurgerMenu = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
 
     useEffect(() => {
-      window.location.reload(true)
+      console.log(isMenuOpen)
     }, [])
 
     const handleRedirect = () => {
