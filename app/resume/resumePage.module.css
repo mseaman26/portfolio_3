@@ -4,7 +4,7 @@
     color: var(--offWhite);
     padding-top: var(--paddingMedium);
     height: calc(100vh - 80px);
-    max-width: 100vw;
+    height: 5000px;
 }
 .header{
     font-weight: 400;

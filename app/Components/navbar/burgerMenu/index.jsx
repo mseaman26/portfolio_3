@@ -92,6 +92,7 @@ const BurgerMenu = () => {
               <Link href='/'>HOME</Link>
               <Link href='/projects'>PROJECTS</Link>
               <Link href='/contact'>CONTACT</Link>
+              <Link href='/resume'>RESUME</Link>
           </Menu>
       </div>
     )
