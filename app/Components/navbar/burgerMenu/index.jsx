@@ -2,6 +2,7 @@
 import { useState, useEffect } from 'react'
 import { slide as Menu } from 'react-burger-menu'
 import Link from 'next/link'
+import { useRouter } from 'next/navigation'
 
 const menuStyles = {
     // Position and sizing of burger button
@@ -80,11 +81,16 @@ const menuStyles = {
 
 const BurgerMenu = () => {
 
+    const router = useRouter()
     const [isMenuOpen, setIsMenuOpen] = useState(false)
 
     useEffect(() => {
       console.log(isMenuOpen)
     }, [isMenuOpen])
+
+    const handleRedirect = () => {
+      router.push('images/Resume.pdf')
+    }
 
     return(
       <div onClick={()=> setIsMenuOpen(!isMenuOpen)}>
@@ -92,7 +98,7 @@ const BurgerMenu = () => {
               <Link href='/'>HOME</Link>
               <Link href='/projects'>PROJECTS</Link>
               <Link href='/contact'>CONTACT</Link>
-              <Link href='/images/Resume.pdf'>RESUME</Link>
+              <Link href='/images/Resume.pdf' onClick={handleRedirect}>RESUME</Link>
           </Menu>
       </div>
     )
