@@ -24,14 +24,19 @@ body{
 }
 .page{
   background-color: var(--offBlack);
+  padding-top: var(--paddingMedium);
   color: var(--offWhite);
-  height: calc(100vh - 80px);
+  min-height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
 }.myh1{
   font-size: 48px;
   font-weight: 300;
   margin-top: 0;
   margin-bottom: var(--paddingMedium);
+  padding-bottom: 0px;
   text-align: center;
   /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
   padding-inline: var(--paddingMedium);

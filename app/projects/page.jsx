@@ -9,6 +9,7 @@ const Projects = () => {
             <Dash/>
             <div className={styles.links}>
                 <Link href={'projects/websites'}><h2>Professional Websites</h2></Link>
+                <Link href={'projects/games'}><h2>Games</h2></Link>
                 <Link href={'projects/other'}><h2>Other Projects</h2></Link>
             </div>
         </main>

@@ -17,6 +17,13 @@
 .imageAndDesc img{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
+    width: 300px;
+    height: auto;
+}
+.imageAndGif{
+    display: flex;
+    min-width: 300px;
+    min-height: 300px;
 }
 .stillImage{
     position: absolute;
