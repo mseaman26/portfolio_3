@@ -15,7 +15,7 @@ const Websites = () => {
                     <Project 
                     gif={project.gif} 
                     image={project.image}
-                    title ={'Casa Susana'} 
+                    title ={project.title} 
                     description={project.description} 
                     link={project.link} 
                     github={project.github} 

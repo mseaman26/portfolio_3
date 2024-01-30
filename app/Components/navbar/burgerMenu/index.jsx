@@ -80,7 +80,7 @@ const menuStyles = {
   } 
 
 const BurgerMenu = () => {
-    const resumeUrl = 'path/to/your/resume.pdf'
+    const resumeUrl = 'images/Resume.pdf'
     const uniqueQueryParam = `?nocache=${Date.now()}`
     const router = useRouter()
     const [isMenuOpen, setIsMenuOpen] = useState(false)
