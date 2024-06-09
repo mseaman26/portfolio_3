@@ -1,20 +1,42 @@
-
-import { Inter } from 'next/font/google'
+'use client'
 import styles from './page.module.css'
 import Image from 'next/image'
 import FeaturedProject from '@/app/Components/projects/FeaturedProject/FeaturedProject'
 import { games, websites } from '@/Lib/projects'
+import { useState, useRef, useEffect } from 'react'
+import headshot from '@/public/images/headshot.webp'
 
-const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+
+  const [headshotLoaded, setHeadshotLoaded] = useState(false);
+  const headshotref = useRef(null)
+
+  useEffect(() => {
+    if (headshotref.current && headshotref.current.complete) {
+      setHeadshotLoaded(true);
+    }
+  }, [headshotref.current]);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setHeadshotLoaded
+    }, 2000);
+  }, [])
+
+  const handleImageLoad = () => {
+    setHeadshotLoaded(true);
+  };
+
   return (
     <main className={styles.container}>
       {/* <h1 className={styles.michaelSeaman}>Michael Seaman</h1>
       <Dash/>
       <h2>Full-Stack Developer</h2> */}
-      <div className={styles.headShot}>
-        <Image  
+      <div className={`${styles.headShot} ${headshotLoaded ? styles.loaded : ''}`}  onLoad={() => setHeadshotLoaded(true)}>
+        <Image 
+          ref={headshotref} 
+          className={`${styles.headShotImage}`}
           loading='lazy'
           width={100} 
           height={100} 
@@ -23,7 +45,8 @@ export default function Home() {
           sizes="250px"
           alt='headshot of Michael Seaman'
           data-nimg="1"
-        src="/_next/image?url=%2Fimages%2Fheadshot.webp&w=3840&q=75"/>
+          onLoadingComplete={handleImageLoad}
+        src={headshot}/>
       </div>
       <div className={styles.content}>
         <h1>Hi, I'm Mike</h1>
