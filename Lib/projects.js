@@ -1,5 +1,5 @@
 import { shortLorem } from "./lorem"
-import poker from '../public/images/pokerStill.png'
+import poker from '../public/images/PokerStill.png'
 
 export const websites = [
 
