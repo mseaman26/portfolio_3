@@ -10,9 +10,10 @@ const Websites = () => {
         <main className={styles.container}>
             <h1>Professional Websites</h1>
             <Dash/>
-            {websites.map((project) =>{
+            {/* {websites.map((project) =>{
                 return(
                     <Project 
+                    key={project.link}
                     gif={project.gif} 
                     image={project.image}
                     title ={project.title} 
@@ -22,7 +23,7 @@ const Websites = () => {
                     alt={project.alt}
                     techs={project.techs}/>
                 )
-            })}
+            })} */}
             
         </main>
     )

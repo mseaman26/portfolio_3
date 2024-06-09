@@ -37,11 +37,11 @@ const Project = ({id, gif, image, title, description, link, github, alt, techs})
                     <h3>Techs and Techniques:</h3>
                     <div className={styles.techList}>
                         <ul>
-                            {techs.map((tech) => {
+                            {/* {techs.map((tech) => {
                                 return(
                                     <li>{tech}</li>
                                 )
-                            })}
+                            })} */}
                         </ul>
                     </div>
                 </div>

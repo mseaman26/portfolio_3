@@ -8,7 +8,7 @@ const OtherProjectsPage = () => {
         <main className={`page`}>
             <h1>Other Projects</h1>
             <Dash/>
-            {otherProjects.map((project) =>{
+            {/* {otherProjects.map((project) =>{
                 return(
                     <Project 
                     gif={project.gif} 
@@ -19,7 +19,7 @@ const OtherProjectsPage = () => {
                     github={project.github} 
                     alt={project.alt}/>
                 )
-            })}
+            })} */}
         </main>
     )
 }
