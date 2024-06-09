@@ -1,7 +1,7 @@
 'use client'
 import Image from 'next/image'
 import { useState, useEffect } from 'react'
-import styles from './featuredProject.module.css'
+import styles from './featuredProjects.module.css'
 
 const FeaturedProject = ({id, gif, image, title, description, link, github, alt, techs}) => {
 
