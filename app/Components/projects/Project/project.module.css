@@ -18,7 +18,7 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
     width: 300px;
-    height: auto;
+    height: 300px;
 }
 .imageAndGif{
     display: flex;
@@ -33,12 +33,21 @@
     margin-block: 0px;
     padding-inline: var(--paddingMedium);
 }
+.container h3{
+    margin-left: var(--paddingMedium);
+    text-decoration: underline;
+}
+
+.container ul{
+
+}
+
 .links{
     display: flex;
     justify-content: space-evenly;
     height: 100%;
     width: 100%;
-    padding-top: var(--paddingMedium);
+    margin-top: var(--paddingMedium);
 }
 .container a{
   text-decoration: none;

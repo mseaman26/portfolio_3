@@ -1,58 +1,73 @@
 .container{
     background-color: var(--offBlack);
     color: var(--offWhite);
-    min-height: 95vh;
+    min-height: 100vh;
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center; 
     padding: var(--paddingMedium);
 }  
-.michaelSeaman{
-    font-size: 48px;
-    font-weight: 300;
-    margin-top: 0;
-    margin-bottom: var(--paddingSmall);
-    text-align: center;
-    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
-    padding-inline: var(--paddingMedium);
-    cursor:default;
-    border-radius: 10px;
-}
- .michaelSeaman{
+.content{
+    display: flex;
+    flex-direction: column;
 
+    max-width: 800px;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
 }
-.dash{
-    width: 200px;
-    height: 3px;
-    background-color: var(--offWhite);
-    transform: skew(-60deg);
-}
-.container h2{
+.container h1{
+    font-size: 50px;
+    font-family: var(--mainFont);
     font-weight: 400;
-    margin-top: var(--paddingSmall);
-    margin-bottom: var(--paddingMedium);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
-    padding-inline: var(--paddingMedium);
-    padding-block: var(--paddingSmall);
-    cursor:default;
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: var(--paddingSmall);
+}
+.featuredProjectsHeader{
+    font-family: var(--mainFont);
+    font-weight: 400;
     border-radius: 10px;
+    margin: 0px;
+    margin-bottom: var(--paddingMedium);
+}
+.aboutMe    {
+    font-size: 20px;
+    font-weight: 300;
+    margin: 0px;
+    margin-bottom: var(--paddingMedium);
+    padding: 0px;
+    font-family: var(--mainFont);
+    font-weight: 100;
 }
 .headShot{
-    height: 300px;
-    width: 300px;
+    margin-top: var(--paddingSmall);
+    height: 250px;
+    width: 250px;
     background-size: cover;
     border-radius: 50%;
     overflow: hidden;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: var(--paddingMedium);
+
 }
 .headShot img{
     position: relative;
-    bottom: 40px;
+    top: -30px;
+    overflow: hidden;
+    background-position: 30px;
+}
+.FeaturedProjects{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: var(--paddingMedium);
+
 }
 @media screen and (max-width: 576px) {
-    .michaelSeaman{
-        font-size: 35px;
+    .container h1{
+        font-size: 36px;
     }
 } 
 

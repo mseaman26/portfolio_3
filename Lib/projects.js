@@ -1,21 +1,11 @@
-import { lorem } from "./lorem"
+import { shortLorem } from "./lorem"
+import poker from '../public/images/pokerStill.png'
+
 export const websites = [
-    {
-        title: 'Casa Susana',
-        description: lorem,
-        gif: '/_next/image?url=%2Fimages%2FCasaSusana-ezgif.com-optimize.gif&w=640&q=75',
-        gifSrcSet: '/_next/image?url=%2Fimages%2FCasaSusana-ezgif.com-optimize.gif&w=384&q=75 1x, /_next/image?url=%2Fimages%2FCasaSusana-ezgif.com-optimize.gif&w=640&q=75 2x',
-        image: '/_next/image?url=%2Fimages%2Fcasa_still.png&w=640&q=75',
-        imgSrcSet: "/_next/image?url=%2Fimages%2Fcasa_still.png&w=384&q=75 1x, /_next/image?url=%2Fimages%2Fcasa_still.png&w=640&q=75 2x",
-        skills: [],
-        techs: [],
-        github: '',
-        alt: 'preview of the Casa Susana website',
-        link: 'https://mex-restaurant.vercel.app/'
-    },
+
     {
         title: 'Dr Polukoshko, Optometrist',
-        description: lorem,
+        description: shortLorem,
         gif: '/_next/image?url=%2Fimages%2FDrPolukoshkoOptometrist-ezgif.com-optimize.gif&w=640&q=75',
         gifSrcSet: '/_next/image?url=%2Fimages%2FDrPolukoshkoOptometrist-ezgif.com-optimize.gif&w=384&q=75 1x, /_next/image?url=%2Fimages%2FDrPolukoshkoOptometrist-ezgif.com-optimize.gif&w=640&q=75 2x',
         image: '/_next/image?url=%2Fimages%2FPolukoshko_still.png&w=640&q=75',
@@ -24,14 +14,40 @@ export const websites = [
         techs: [],
         github: '',
         alt:'preview of the polukoshko website',
-        link: 'https://polukoshko.vercel.app/'
-    }
+        link: 'https://drpolukoshko.com/'
+    },
+    {
+        title: 'Casa Susana',
+        description: `A vibrant website for both locations of Casa Susana Mexican Cantina.  This site features many dynamic components including online ordering with shopping cart and checkout, stylish menu pages rendered from JSON data, and a sleek burger menu with animation.  I did all the building of this website, following a design made by someone else.`,
+        gif: '/_next/image?url=%2Fimages%2FCasaSusana-ezgif.com-optimize.gif&w=640&q=75',
+        gifSrcSet: '/_next/image?url=%2Fimages%2FCasaSusana-ezgif.com-optimize.gif&w=384&q=75 1x, /_next/image?url=%2Fimages%2FCasaSusana-ezgif.com-optimize.gif&w=640&q=75 2x',
+        image: '/_next/image?url=%2Fimages%2Fcasa_still.png&w=640&q=75',
+        imgSrcSet: "/_next/image?url=%2Fimages%2Fcasa_still.png&w=384&q=75 1x, /_next/image?url=%2Fimages%2Fcasa_still.png&w=640&q=75 2x",
+        skills: [],
+        techs: ['Vite', 'Tailwind.css', 'react-scroll', 'react-burger-menu', 'useContext hook' ],
+        github: '',
+        alt: 'preview of the Casa Susana website',
+        link: 'https://mex-restaurant.vercel.app/'
+    },
 ]
 
 export const games = [
     {
+        title: `Mike's Friendly Poker`,
+        description: shortLorem,
+        gif: '',
+        gifSrcSet: '/_next/image?url=%2Fimages%2FDrPolukoshkoOptometrist-ezgif.com-optimize.gif&w=384&q=75 1x, /_next/image?url=%2Fimages%2FDrPolukoshkoOptometrist-ezgif.com-optimize.gif&w=640&q=75 2x',
+        image: poker,
+        imgSrcSet: '/_next/image?url=%2Fimages%2FPolukoshko_still.png&w=384&q=75 1x, /_next/image?url=%2Fimages%2FPolukoshko_still.png&w=640&q=75 2x',
+        skills: [],
+        techs: [],
+        github: '',
+        alt:'preview of the polukoshko website',
+        link: 'https://poker-taupe-one.vercel.app/'
+    },
+    {
         title: `Mike's Nerdle!`,
-        description: lorem,
+        description: shortLorem,
         gif: '/_next/image?url=%2Fimages%2FnerdleGif.gif&w=640&q=75',
         gifSrcSet: '/_next/image?url=%2Fimages%2FnerdleGif.gif&w=384&q=75 1x, /_next/image?url=%2Fimages%2FnerdleGif.gif&w=640&q=75 2x',
         image: '/_next/image?url=%2Fimages%2FnerdleStill.png&w=640&q=75',
@@ -44,7 +60,7 @@ export const games = [
     },
     {
         title: `Mike's Wordle!`,
-        description: lorem,
+        description: shortLorem,
         gif: '/_next/image?url=%2Fimages%2FwordleGif.gif&w=640&q=75',
         gifSrcSet: '/_next/image?url=%2Fimages%2FwordleGif.gif&w=384&q=75 1x, /_next/image?url=%2Fimages%2FwordleGif.gif&w=640&q=75 2x',
         image: '/_next/image?url=%2Fimages%2FwordleStill.png&w=640&q=75',
@@ -60,7 +76,7 @@ export const games = [
 export const otherProjects = [
     {
         title: `Baseball Grapher`,
-        description: lorem,
+        description: shortLorem,
         gif: '',
         gifSrcSet: '',
         image: '/_next/image?url=%2Fimages%2FbaseballGrapherScreenShot.png&w=640&q=75',

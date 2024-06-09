@@ -1,8 +1,12 @@
 :root{
-  --offBlack: #333333;
-  --offWhite: #f1f1f1;
+  /* --offBlack: #333333; */
+  --offBlack: rgba(15, 20, 25);
+  --offWhite: #eeeded;
   --almostBlack: #050505;
   --active: #FFD233;
+  --textSecondary: rgba(131, 156, 186);
+
+  --mainFont: "Nunito Sans", sans-serif;
 
   --paddingSmall: 15px;
   --paddingMedium: 30px;
@@ -20,7 +24,7 @@ html{
 body{
   padding: 0;
   margin: 0;
-  
+  background-color: var(--offBlack);
 }
 .page{
   background-color: var(--offBlack);

@@ -1,9 +1,9 @@
 import './globals.css'
-import { Inter } from 'next/font/google'
-import Navbar from '@/app/Components/navbar'
+import { Inter, Roboto_Mono} from 'next/font/google'
 import Head from 'next/head';
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ['latin'], variable: '--inter'})
+const chocolateSans = Roboto_Mono({ subsets: ['latin'], variable: '--roboto', weight: '400', display: 'swap'})
 
 export const metadata = {
   title: "Michael Seaman, Software Developer",
@@ -22,10 +22,13 @@ export default function RootLayout({ children }) {
         href="/images/headshot.webp"
         type="image/<generated>"
         sizes="<generated>"
-      />
+      />  
+      <style>
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+</style>
       </Head>
-      <body className={inter.className}>
-        <Navbar/>
+      <body className={`${inter.variable} ${chocolateSans.variable}`}>
+      
         {children}
       </body>
     </html>

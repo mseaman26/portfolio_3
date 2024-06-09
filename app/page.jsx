@@ -2,17 +2,17 @@
 import { Inter } from 'next/font/google'
 import styles from './page.module.css'
 import Image from 'next/image'
-import SkillsSection from '@/app/Components/home/skillsSection'
-import Dash from './Components/dash'
+import FeaturedProject from '@/app/Components/projects/FeaturedProject/FeaturedProject'
+import { games, websites } from '@/Lib/projects'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
     <main className={styles.container}>
-      <h1 className={styles.michaelSeaman}>Michael Seaman</h1>
+      {/* <h1 className={styles.michaelSeaman}>Michael Seaman</h1>
       <Dash/>
-      <h2>Full-Stack Developer</h2>
+      <h2>Full-Stack Developer</h2> */}
       <div className={styles.headShot}>
         <Image  
           loading='lazy'
@@ -20,22 +20,52 @@ export default function Home() {
           height={100} 
           decoding="async"
           layout='responsive' 
-          sizes="100vw"
+          sizes="250px"
           alt='headshot of Michael Seaman'
           data-nimg="1"
-          srcset="
-          /_next/image?url=%2Fimages%2Fheadshot.webp&w=640&q=75 640w,
-          /_next/image?url=%2Fimages%2Fheadshot.webp&w=750&q=75 750w,
-          /_next/image?url=%2Fimages%2Fheadshot.webp&w=828&q=75 828w,
-          /_next/image?url=%2Fimages%2Fheadshot.webp&w=1080&q=75 1080w,
-          /_next/image?url=%2Fimages%2Fheadshot.webp&w=1200&q=75 1200w,
-          /_next/image?url=%2Fimages%2Fheadshot.webp&w=1920&q=75 1920w,
-          /_next/image?url=%2Fimages%2Fheadshot.webp&w=2048&q=75 2048w,
-          /_next/image?url=%2Fimages%2Fheadshot.webp&w=3840&q=75 3840w
-        "
         src="/_next/image?url=%2Fimages%2Fheadshot.webp&w=3840&q=75"/>
       </div>
-      <SkillsSection/>
+      <div className={styles.content}>
+        <h1>Hi, I'm Mike</h1>
+        <p className={styles.aboutMe}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <h2 className={styles.featuredProjectsHeader}>Featured Projects</h2>
+        <div className={styles.FeaturedProjects}>
+          <FeaturedProject 
+              gif={games[0].gif} 
+              image={games[0].image}
+              title ={games[0].title} 
+              description={games[0].description} 
+              link={games[0].link} 
+              github={games[0].github} 
+              alt={games[0].alt}
+              skills={games[0].skills}
+              techs={games[0].techs}
+              />
+              <FeaturedProject 
+              gif={games[1].gif} 
+              image={games[1].image}
+              title ={games[1].title} 
+              description={games[1].description} 
+              link={games[1].link} 
+              github={games[1].github} 
+              alt={games[1].alt}
+              skills={games[1].skills}
+              techs={games[1].techs}
+              />
+              <FeaturedProject 
+              gif={websites[0].gif} 
+              image={websites[0].image}
+              title ={websites[0].title} 
+              description={websites[0].description} 
+              link={websites[0].link} 
+              github={websites[0].github} 
+              alt={websites[0].alt}
+              skills={websites[0].skills}
+              techs={websites[0].techs}
+              />
+          </div>
+      </div>
+        
     </main>
   )
 }

@@ -19,7 +19,8 @@ const Websites = () => {
                     description={project.description} 
                     link={project.link} 
                     github={project.github} 
-                    alt={project.alt}/>
+                    alt={project.alt}
+                    techs={project.techs}/>
                 )
             })}
             
