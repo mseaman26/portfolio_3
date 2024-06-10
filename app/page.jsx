@@ -2,6 +2,7 @@
 import styles from './page.module.css'
 import Image from 'next/image'
 import FeaturedProject from '@/app/Components/projects/FeaturedProject/FeaturedProject'
+import MainProject from './Components/projects/MainProject/MainProject'
 import { games, websites } from '@/Lib/projects'
 import { useState, useRef, useEffect } from 'react'
 import headshot from '@/public/images/headshot.webp'
@@ -50,8 +51,19 @@ export default function Home() {
       </div>
       <div className={styles.content}>
         <h1>Hi, I'm Mike</h1>
-        <p className={styles.aboutMe}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <h2 className={styles.featuredProjectsHeader}>Featured Projects</h2>
+        <p className={styles.aboutMe}>I'm a passionate Full-Stack Developer with a knack for all things web development and debugging. With a keen eye for detail and a love for solving complex problems, I strive to create efficient, robust, and user-friendly web applications. Whether it's front-end design or back-end architecture, I'm dedicated to delivering high-quality solutions that meet and exceed user expectations.</p>
+        <h2 className={styles.featuredProjectHeader}>Featured Project</h2>
+        <MainProject
+          gif={games[0].gif} 
+          image={games[0].image}
+          title ={games[0].title} 
+          description={games[0].description} 
+          link={games[0].link} 
+          github={games[0].github} 
+          alt={games[0].alt}
+          skills={games[0].skills}
+          techs={games[0].techs}
+        />
         <div className={styles.FeaturedProjects}>
           <FeaturedProject 
               gif={games[0].gif} 

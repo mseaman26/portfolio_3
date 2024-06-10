@@ -25,12 +25,14 @@
     padding: 0px;
     margin-bottom: var(--paddingSmall);
 }
-.featuredProjectsHeader{
+.featuredProjectHeader{
     font-family: var(--mainFont);
     font-weight: 400;
     border-radius: 10px;
     margin: 0px;
     margin-bottom: var(--paddingMedium);
+    font-weight: 800;
+    font-size: 30px;
 }
 .aboutMe    {
     font-size: 20px;

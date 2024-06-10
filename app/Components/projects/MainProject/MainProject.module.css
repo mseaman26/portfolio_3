@@ -1,0 +1,45 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: var(--paddingMedium);
+}
+.mainGifContainer{
+    position: absolute
+}
+.mainImageContainer{
+    position: relative;
+    border: 2px solid var(--textSecondary);
+}
+.mainGifContainer, .mainImageContainer{
+    position: relative;
+    max-width: 50%;
+    min-width: 50%;
+    height: auto;
+    border-radius: 20px;
+    z-index: 1;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    padding: var(--paddingSmall);
+    
+}
+.mainGifContainer img, .mainImageContainer img{
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+.titleAndDescription{
+    display: flex;
+    flex-direction: column;
+    font-family: var(--mainFont);
+    padding: var(--paddingSmall);
+    width: 50%;
+}
+.title{
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    text-wrap: nowrap;
+    margin-top: var(--paddingSmall);
+}
