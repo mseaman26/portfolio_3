@@ -9,7 +9,7 @@
 }
 .mainImageContainer{
     position: relative;
-    border: 2px solid var(--textSecondary);
+    border: 1px solid var(--textSecondary);
 }
 .mainGifContainer, .mainImageContainer{
     position: relative;
@@ -27,6 +27,7 @@
     width: 100%;
     height: auto;
     border-radius: 20px;
+    object-fit: cover;
 }
 .titleAndDescription{
     display: flex;
@@ -35,11 +36,42 @@
     padding: var(--paddingSmall);
     width: 50%;
 }
+.titleMobile{
+    display: none;
+    margin-top: 0px;
+    margin-bottom: var(--paddingSmall);
+}
 .title{
     font-size: 24px;
     font-weight: 600;
     margin-bottom: 0px;
     padding-bottom: 0px;
     text-wrap: nowrap;
-    margin-top: var(--paddingSmall);
+    margin-top: 0px;
+}
+
+@media screen and (max-width: 768px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: var(--paddingMedium);
+    }
+    .titleMobile{
+        display: block;
+        font-size: 20px;
+        font-weight: 600;
+        text-wrap: nowrap;
+    }
+    .title{
+        display: none;
+    }
+    .titleAndDescription{
+        width: 100%;
+    }
+    .mainGifContainer, .mainImageContainer{
+        max-width: 100%;
+        min-width: 100%;
+    }
+    
 }

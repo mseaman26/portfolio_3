@@ -18,17 +18,7 @@
     cursor:default;
     border-radius: 10px;
 }
-.container h2{
-    font-weight: 400;
-    margin-top: var(--paddingSmall);
-    margin-bottom: var(--paddingMedium);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    padding-inline: var(--paddingMedium);
-    padding-block: var(--paddingSmall);
-    cursor:default;
-    border-radius: 10px;
-    cursor: pointer;
-}
+
 .dash{
     width: 200px;
     height: 3px;

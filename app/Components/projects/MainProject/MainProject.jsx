@@ -18,6 +18,7 @@ const MainProject = ({id, gif, image, title, description, link, github, alt, tec
 
     return (
         <div className={styles.container}>
+            <h2 className={styles.titleMobile}>{title}</h2>
             {gif && <div className={styles.mainGifContainer}>
             <a href={link} target='_blank'>  
             {gif && 
@@ -26,9 +27,10 @@ const MainProject = ({id, gif, image, title, description, link, github, alt, tec
                 loading="lazy"
                 decoding='async'
                 data-nimg='1'
-                width={300} 
-                height={300} 
+                width={600} 
+                height={600} 
                 alt={alt} 
+                quality={100}
                 />
                 
             }
@@ -36,7 +38,7 @@ const MainProject = ({id, gif, image, title, description, link, github, alt, tec
             </div>}
             <div className={styles.mainImageContainer}>
                 <a href={link} target='_blank'>
-                <Image className={styles.stillImage} src={image} width={300} height={300} alt={alt}></Image>
+                <Image className={styles.stillImage} src={image} width={600} height={600} alt={alt} quality={100}></Image>
                 </a>
             </div>
             <div className={styles.titleAndDescription}>

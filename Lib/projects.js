@@ -1,14 +1,18 @@
 import { shortLorem } from "./lorem"
 import poker from '../public/images/PokerStill.png'
+import polukoshkoGif from '../public/images/Polukoshko_Gif.gif'
+import polukoshkoStill from '../public/images/Polukoshko_still.png'
+import baseballStill from '../public/images/baseballGrapherScreenShot.png'
 
 export const websites = [
 
     {
         title: 'Dr Polukoshko, Optometrist',
         description: shortLorem,
-        gif: '/_next/image?url=%2Fimages%2FDrPolukoshkoOptometrist-ezgif.com-optimize.gif&w=640&q=75',
+        // gif: '/_next/image?url=%2Fimages%2FDrPolukoshkoOptometrist-ezgif.com-optimize.gif&w=640&q=75',
+        gif: polukoshkoGif,
         gifSrcSet: '/_next/image?url=%2Fimages%2FDrPolukoshkoOptometrist-ezgif.com-optimize.gif&w=384&q=75 1x, /_next/image?url=%2Fimages%2FDrPolukoshkoOptometrist-ezgif.com-optimize.gif&w=640&q=75 2x',
-        image: '/_next/image?url=%2Fimages%2FPolukoshko_still.png&w=640&q=75',
+        image: polukoshkoStill,
         imgSrcSet: '/_next/image?url=%2Fimages%2FPolukoshko_still.png&w=384&q=75 1x, /_next/image?url=%2Fimages%2FPolukoshko_still.png&w=640&q=75 2x',
         skills: [],
         techs: [],
@@ -34,7 +38,7 @@ export const websites = [
 export const games = [
     {
         title: `Mike's Friendly Poker`,
-        description: shortLorem,
+        description: `I set out to make a Texas Holdem app because I wanted to be able to play friendly poker games with my friends with virtual chips and not hassle.  It was so much fun to make.  The game logic was a wonderfully complex challenge.  I also enjoyed writing tests for the logic as it was a great way to be certain that the game logic was remaining rock solid throughout the development process.`,
         gif: '',
         gifSrcSet: '/_next/image?url=%2Fimages%2FDrPolukoshkoOptometrist-ezgif.com-optimize.gif&w=384&q=75 1x, /_next/image?url=%2Fimages%2FDrPolukoshkoOptometrist-ezgif.com-optimize.gif&w=640&q=75 2x',
         image: poker,
@@ -79,7 +83,7 @@ export const otherProjects = [
         description: shortLorem,
         gif: '',
         gifSrcSet: '',
-        image: '/_next/image?url=%2Fimages%2FbaseballGrapherScreenShot.png&w=640&q=75',
+        image: baseballStill,
         imgSrcSet: "/_next/image?url=%2Fimages%2FbaseballGrapherScreenShot.png&w=384&q=75 1x, /_next/image?url=%2Fimages%2FbaseballGrapherScreenShot.png&w=640&q=75 2x",
         skills: [],
         techs: [],

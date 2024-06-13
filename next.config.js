@@ -1,5 +1,8 @@
 // next.config.js
 module.exports = {
+  images: {
+    deviceSizes: [320, 375, 450, 540, 640, 750, 828, 1080, 1200, 1920]
+  },
   webpack: (config, { isServer }) => {
     // Add a rule for PDF files
     config.module.rules.push({
@@ -14,6 +17,7 @@ module.exports = {
           },
         },
       ],
+      
     });
 
     return config;

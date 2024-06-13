@@ -26,9 +26,10 @@ const FeaturedProject = ({id, gif, image, title, description, link, github, alt,
                 loading="lazy"
                 decoding='async'
                 data-nimg='1'
-                width={300} 
-                height={300} 
+                width={600} 
+                height={600} 
                 alt={alt} 
+                className={styles.gif}
                 />
                 
             }
@@ -36,7 +37,7 @@ const FeaturedProject = ({id, gif, image, title, description, link, github, alt,
             </div>
             <div className={styles.imageContainer}>
                 <a href={link} target='_blank'>
-                <Image className={styles.stillImage} src={image} width={300} height={300} alt={alt}></Image>
+                <Image className={styles.stillImage} src={image} width={600} height={600} alt={alt}></Image>
                 </a>
             </div>
             <h2 className={styles.title}>{title}</h2>

@@ -17,7 +17,7 @@
     margin: 0px;
     padding: 0px;
 }
-.container h1{
+.pageHeader{
     font-size: 50px;
     font-family: var(--mainFont);
     font-weight: 400;
