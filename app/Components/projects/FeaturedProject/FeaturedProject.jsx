@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { useState, useEffect } from 'react'
 import styles from './featuredProjects.module.css'
 
-const FeaturedProject = ({id, gif, image, title, description, link, github, alt, techs}) => {
+const FeaturedProject = ({id, gif, image, title, description, link, github, alt, techs, githubServer, githubClient}) => {
 
     const [imageDisplay, setImageDisplay] = useState('inline')
 
@@ -18,43 +18,75 @@ const FeaturedProject = ({id, gif, image, title, description, link, github, alt,
 
     return (
         <div className={styles.container}>
-            <div className={styles.gifContainer}>
-            <a href={link} target='_blank'>  
-            {gif && 
-                <Image 
-                src={gif} 
-                loading="lazy"
-                decoding='async'
-                data-nimg='1'
-                width={600} 
-                height={600} 
-                alt={alt} 
-                className={styles.gif}
-                />
+            <div className={styles.imageAndInfo}>
+                <div className={styles.imageAndGif}>
+                    <div className={styles.gifContainer}>
+                    <a href={link} target='_blank'>  
+                    <Image 
+                    src={gif ? gif : image} 
+                    loading="lazy"
+                    decoding='async'
+                    data-nimg='1'
+                    width={600} 
+                    height={600} 
+                    alt={alt} 
+                    className={styles.gif}
+                    />
+                    </a> 
+                    </div>
+                    {/* <div className={styles.imageContainer}>
+                        <a href={link} target='_blank'>
+                        <Image 
+                            className={styles.stillImage} 
+                            loading="lazy"
+                            decoding='async'
+                            data-nimg='1' 
+                            src={image} 
+                            width={600} 
+                            height={600} 
+                            alt={alt}>
+                        </Image>
+                        </a>
+                    </div> */}
+                </div>
+                <div className={styles.info}>
+                    <h2 className={styles.title}>{title}</h2>
+                    <p className={styles.description}>{description}</p>
+                </div>
                 
-            }
-            </a> 
-            </div>
-            <div className={styles.imageContainer}>
-                <a href={link} target='_blank'>
-                <Image className={styles.stillImage} src={image} width={600} height={600} alt={alt}></Image>
-                </a>
-            </div>
-            <h2 className={styles.title}>{title}</h2>
-            <p className={styles.description}>{description}</p>
-            
+                
 
-            
-            {/* <h2>Techs and Techniques</h2> */}
+                
+                {/* <h2>Techs and Techniques</h2> */}
 
-            {/* <div className={styles.links}>
+                {/* <div className={styles.links}>
+                    {link && 
+                        <Link href={link} target='_blank'>Visit Live Site</Link>
+                    }
+                    {github && 
+                        <Link href={github} target='_blank'>Visit Github Repo</Link>
+                    }
+                </div> */}
+            </div>
+            <div className={styles.buttons}>
                 {link && 
-                    <Link href={link} target='_blank'>Visit Live Site</Link>
+                    <a className={`${styles.button} ${styles.liveSite}`} href={link} target='_blank'>Visit Live Site</a>
                 }
                 {github && 
-                    <Link href={github} target='_blank'>Visit Github Repo</Link>
+                    <a className={`${styles.button} ${styles.repoLink}`}  href={github} target='_blank'>Visit Github Repo</a>
                 }
-            </div> */}
+                {
+                    githubServer &&
+                    <a className={`${styles.button} ${styles.repoLink}`}  href={githubServer} target='_blank'>Visit Server Repo</a>
+                }
+                {
+                    githubClient &&
+                    <a className={`${styles.button} ${styles.repoLink}`}  href={github  } target='_blank'>Visit Client Repo</a>
+                }
+                {
+                    <a className={`${styles.button} ${styles.learnMore}`} >Learn More</a>
+                }
+            </div>
         </div>
     )
 }

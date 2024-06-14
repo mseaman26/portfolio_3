@@ -1,23 +1,49 @@
 .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: var(--paddingMedium);
+}
+.imageAndInfo{
     position: relative;
-    width: 30%;
+    min-width: 100vw;
     margin-bottom: 0px;
+    padding: var(--paddingSmall);
+    display: flex;
+    margin: var(--paddingSmall);
+    margin-bottom: 0px;
+
+}
+.imageAndGif{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 50%;
+    margin-bottom: 0px;
+    position: relative;
+    padding: var(--paddingSmall);
+
 }
 .gifContainer{
-    position: absolute;
-    width: 100%;
-    height: auto;
+    position: relative;
+    width: 75%;
+    aspect-ratio: 1/1;
     border-radius: 20px;
     overflow: hidden;
     z-index: 1;
     cursor: pointer;
     transition: transform 0.3s ease;
+    max-width: 300px;
 }
 .imageContainer{
     cursor: pointer;
     position: relative;
     top: 0;
-    width: 100%;
+    width: 75%;
+    aspect-ratio: 1/1;
     height: auto;
     border-radius: 20px;
     overflow: hidden;
@@ -25,12 +51,21 @@
 }
 .imageContainer:hover, .gifContainer:hover{
     transform: scale(1.1);
+    z-index: 2;
 }
 .stillImage, .gif{
     width: 100%;
     height: auto;
     border-radius: 20px;
-    margin-bottom: 0px
+    margin-bottom: 0px;
+
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    font-family: var(--mainFont);
+    padding: var(--paddingSmall);
+    max-width: 300px;
 }
 .title{
     font-size: 18px;
@@ -38,8 +73,8 @@
     margin-bottom: 0px;
     padding-bottom: 0px;
     text-wrap: nowrap;
-    margin-top: var(--paddingSmall);
     font-family: var(--mainFont);
+    margin: 0px;
 }
 .description{
     color: var(--textSecondary);
@@ -47,4 +82,52 @@
     font-size: 14px;
     margin-bottom: 0px;
     padding-bottom: 0px;
+}
+.buttons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.button{
+    padding: var(--paddingSmall);
+    border-radius: 15px;
+    min-width: 150px;
+    text-align: center;
+    margin-inline: var(--paddingSmall);
+}
+.liveSite{
+    background-color: var(--primary);
+}
+.repoLink{
+    background-color: var(--secondary);
+}
+.learnMore{
+    background-color: var(--success);
+}
+
+@media screen and (max-width: 576px){
+    .imageAndInfo{
+        flex-direction: column;
+        align-items: center;
+    }
+    .imageAndGif{
+        justify-content: center;
+    }
+    .imageAndGif{
+        width: 75%;
+    }
+    .imageContainer, .gifContainer{
+        width: 100%;
+    }   
+    .info{
+        width: 100%;
+    }
+    .buttons{
+        gap: var(--paddingSmall);
+    }
+    .button{
+        font-size: 14px;
+        padding-block: var(--paddingSmall);
+       
+    }
 }

@@ -5,6 +5,9 @@
   --almostBlack: #050505;
   --active: #FFD233;
   --textSecondary: rgba(131, 156, 186);
+  --primary: #0d6efd;
+  --secondary: #6c757d;
+  --success: #198754;
 
   --mainFont: "Nunito Sans", sans-serif;
 
@@ -58,4 +61,17 @@ body{
   padding-block: var(--paddingSmall);
   cursor:default;
   border-radius: 10px;
+}
+a {
+  color: var(--offWhite);
+  text-decoration: none;
+  cursor: pointer;
+}
+button{
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 600;
 }

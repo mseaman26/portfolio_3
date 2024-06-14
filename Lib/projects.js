@@ -8,7 +8,7 @@ export const websites = [
 
     {
         title: 'Dr Polukoshko, Optometrist',
-        description: shortLorem,
+        description: `I set out to make a Texas Holdem app because I wanted to be able to play friendly poker games with my friends with virtual chips and no hassle.  It was so much fun to make.  The game logic was a wonderfully complex challenge.  I also enjoyed writing tests for the logic as it was a great way to be certain that the game logic was remaining rock solid throughout the development process.`,
         // gif: '/_next/image?url=%2Fimages%2FDrPolukoshkoOptometrist-ezgif.com-optimize.gif&w=640&q=75',
         gif: polukoshkoGif,
         gifSrcSet: '/_next/image?url=%2Fimages%2FDrPolukoshkoOptometrist-ezgif.com-optimize.gif&w=384&q=75 1x, /_next/image?url=%2Fimages%2FDrPolukoshkoOptometrist-ezgif.com-optimize.gif&w=640&q=75 2x',
@@ -38,7 +38,7 @@ export const websites = [
 export const games = [
     {
         title: `Mike's Friendly Poker`,
-        description: `I set out to make a Texas Holdem app because I wanted to be able to play friendly poker games with my friends with virtual chips and not hassle.  It was so much fun to make.  The game logic was a wonderfully complex challenge.  I also enjoyed writing tests for the logic as it was a great way to be certain that the game logic was remaining rock solid throughout the development process.`,
+        description: `I set out to make a Texas Holdem app because I wanted to be able to play friendly poker games with my friends with virtual chips and no hassle.  It was so much fun to make.  The game logic was a wonderfully complex challenge.  I also enjoyed writing tests for the logic as it was a great way to be certain that the game logic was remaining rock solid throughout the development process.`,
         gif: '',
         gifSrcSet: '/_next/image?url=%2Fimages%2FDrPolukoshkoOptometrist-ezgif.com-optimize.gif&w=384&q=75 1x, /_next/image?url=%2Fimages%2FDrPolukoshkoOptometrist-ezgif.com-optimize.gif&w=640&q=75 2x',
         image: poker,
@@ -46,12 +46,14 @@ export const games = [
         skills: [],
         techs: [],
         github: '',
+        githubServer: '',
+        githubClient: '',
         alt:'preview of the polukoshko website',
         link: 'https://poker-taupe-one.vercel.app/'
     },
     {
         title: `Mike's Nerdle!`,
-        description: shortLorem,
+        description: `I set out to make a Texas Holdem app because I wanted to be able to play friendly poker games with my friends with virtual chips and no hassle.  It was so much fun to make.  The game logic was a wonderfully complex challenge.  I also enjoyed writing tests for the logic as it was a great way to be certain that the game logic was remaining rock solid throughout the development process.`,
         gif: '/_next/image?url=%2Fimages%2FnerdleGif.gif&w=640&q=75',
         gifSrcSet: '/_next/image?url=%2Fimages%2FnerdleGif.gif&w=384&q=75 1x, /_next/image?url=%2Fimages%2FnerdleGif.gif&w=640&q=75 2x',
         image: '/_next/image?url=%2Fimages%2FnerdleStill.png&w=640&q=75',
@@ -80,7 +82,7 @@ export const games = [
 export const otherProjects = [
     {
         title: `Baseball Grapher`,
-        description: shortLorem,
+        description: shortLorem+shortLorem+shortLorem,
         gif: '',
         gifSrcSet: '',
         image: baseballStill,
@@ -92,3 +94,5 @@ export const otherProjects = [
         link: 'https://baseball-grapher.herokuapp.com/'
     }, 
 ]
+
+export const projects = [websites[0],games[1], otherProjects[0]]

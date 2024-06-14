@@ -1,7 +1,6 @@
-import {games, otherProjects, websites} from '@/Lib/projects'
+
 import React, {useState} from 'react'
 import Image from 'next/image';
-import styles from './Caurosel.module.css'
 import useEmblaCarousel from 'embla-carousel-react'
 import { DotButton, useDotButton } from './EmblaCarouselDotButton'
 import {
@@ -56,7 +55,7 @@ export default function Caurosel(props) {
                 <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />
                 </div>
 
-                <div className="embla__dots">
+                {/* <div className="embla__dots">
                 {scrollSnaps.map((_, index) => (
                     <DotButton
                     key={index}
@@ -66,7 +65,7 @@ export default function Caurosel(props) {
                     )}
                     />
                 ))}
-                </div>
+                </div> */}
             </div>
         </section>
     )

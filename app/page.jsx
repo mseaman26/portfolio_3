@@ -7,20 +7,13 @@ import { games, websites, otherProjects } from '@/Lib/projects'
 import { useState, useRef, useEffect } from 'react'
 import headshot from '@/public/images/headshot.webp'
 import EmblaCarousel from '@/app/Components/Courosel/Caurosel'
+import { projects } from '@/Lib/projects'
 
 const OPTIONS = { loop: true }
-const SLIDE_COUNT = 5
-const SLIDES = Array.from(Array(SLIDE_COUNT).keys())
-
-const projects = [websites[0],games[1], otherProjects[0]]
-
-
 
 export default function Home() {
 
-  const [activeSlideIndex, setActiveSlideIndex] = useState(0);
   const [headshotLoaded, setHeadshotLoaded] = useState(false);
-  const headshotref = useRef(null)
 
   // useEffect(() => {
   //   if (headshotref.current && headshotref.current.complete) {
@@ -61,7 +54,7 @@ export default function Home() {
       <div className={styles.content} style={{visibility: headshotLoaded ? 'visible': 'hidden'}}>
         <h1 className={styles.pageHeader}>Hi, I'm Mike</h1>
         <p className={styles.aboutMe} >I'm a passionate Full-Stack Developer with a knack for all things web development and debugging. With a keen eye for detail and a love for solving complex problems, I strive to create efficient, robust, and user-friendly web applications. Whether it's front-end design or back-end architecture, I'm dedicated to delivering high-quality solutions that meet and exceed user expectations. Please have a look at some of my work below!</p>
-        <h2 className={styles.featuredProjectHeader}>Featured Project</h2>
+        <h2 className={styles.mainProjectHeader}>Featured Project</h2>
         <MainProject
           gif={games[0].gif} 
           image={games[0].image}
@@ -109,7 +102,7 @@ export default function Home() {
               />
           </div> */}
         <h2 className={styles.featuredProjectHeader}>More Projects</h2>
-        <section>
+        <section className={styles.carouselSection}>
           <EmblaCarousel projects={projects} options={OPTIONS} />
         </section>
         
