@@ -1,0 +1,26 @@
+.container{
+    padding: var(--paddingMedium);
+}
+.imageContainer{
+    max-width: 500px;
+    height: auto;
+}
+.projectImage{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.techs{
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--paddingSmall);
+}
+.tech{
+    padding: var(--paddingSmall);
+    border-radius: 10px;
+    background-color: var(--secondary);
+    color: var(--textPrimary);
+    font-weight: 600;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}

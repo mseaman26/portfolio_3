@@ -43,6 +43,7 @@ export default function Caurosel(props) {
                             alt={projects[index].alt}
                             skills={projects[index].skills}
                             techs={projects[index].techs}
+                            index={index}
                         />
                     </div>
                 ))}

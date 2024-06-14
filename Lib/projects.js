@@ -15,7 +15,7 @@ export const websites = [
         image: polukoshkoStill,
         imgSrcSet: '/_next/image?url=%2Fimages%2FPolukoshko_still.png&w=384&q=75 1x, /_next/image?url=%2Fimages%2FPolukoshko_still.png&w=640&q=75 2x',
         skills: [],
-        techs: [],
+        techs: ['Next.js', 'react-scroll', 'react-burger-menu', 'react-google-maps', 'framer-motion','nuka-carousel', 'CSS', 'HTML' ],
         github: '',
         alt:'preview of the polukoshko website',
         link: 'https://drpolukoshko.com/'
@@ -95,4 +95,4 @@ export const otherProjects = [
     }, 
 ]
 
-export const projects = [websites[0],games[1], otherProjects[0]]
+export const projects = [websites[0],games[1], websites[1], otherProjects[0]]
