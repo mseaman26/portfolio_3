@@ -112,6 +112,12 @@
 .contactLink{
     color: var(--primary);
 }
+.socials{
+    display: flex;
+    gap: var(--paddingSmall);
+    padding: var(--paddingSmall);
+    font-size: 40px;
+}
 @media screen and (max-width: 576px) {
     .container h1{
         font-size: 36px;
