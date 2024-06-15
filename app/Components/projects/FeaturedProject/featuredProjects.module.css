@@ -1,11 +1,9 @@
 .container{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     width: 100%;
     overflow: hidden;
-    margin-bottom: var(--paddingMedium);
 }
 .imageAndInfo{
     position: relative;
@@ -13,8 +11,8 @@
     margin-bottom: 0px;
     padding: var(--paddingSmall);
     display: flex;
-    margin: var(--paddingSmall);
-    margin-bottom: 0px;
+    margin-inline: var(--paddingSmall);
+
 
 }
 .imageAndGif{
@@ -24,8 +22,13 @@
     width: 50%;
     margin-bottom: 0px;
     position: relative;
-    padding: var(--paddingSmall);
 
+}
+.hidden{
+    opacity: 0;
+    position: absolute!important;
+    top: 0;
+    left: 0;
 }
 .gifContainer{
     position: relative;
@@ -58,7 +61,7 @@
     height: auto;
     border-radius: 20px;
     margin-bottom: 0px;
-
+    position: relative ;
 }
 .info{
     display: flex;
@@ -87,8 +90,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: var(--paddingSmall);
-
+    margin-top: var(--paddingSmall);
+    padding-bottom: var(--paddingSmall);
 }
 .button{
     padding: var(--paddingSmall);
@@ -134,6 +137,8 @@
     .button{
         font-size: 14px;
         padding-block: var(--paddingSmall);
+        padding-inline: (5px);
+        min-width: 0px;
        
     }
 }

@@ -8,7 +8,7 @@ export const websites = [
 
     {
         title: 'Dr Polukoshko, Optometrist',
-        description: `I set out to make a Texas Holdem app because I wanted to be able to play friendly poker games with my friends with virtual chips and no hassle.  It was so much fun to make.  The game logic was a wonderfully complex challenge.  I also enjoyed writing tests for the logic as it was a great way to be certain that the game logic was remaining rock solid throughout the development process.`,
+        description: ` A professional website built with a friend/collaborator for an optometrist based in Reno. We used Next.js and focused heavily on server-side rendering and SEO. Appointment booking is handled by utilizing the Revintake platform`,
         // gif: '/_next/image?url=%2Fimages%2FDrPolukoshkoOptometrist-ezgif.com-optimize.gif&w=640&q=75',
         gif: polukoshkoGif,
         gifSrcSet: '/_next/image?url=%2Fimages%2FDrPolukoshkoOptometrist-ezgif.com-optimize.gif&w=384&q=75 1x, /_next/image?url=%2Fimages%2FDrPolukoshkoOptometrist-ezgif.com-optimize.gif&w=640&q=75 2x',
@@ -44,7 +44,7 @@ export const games = [
         image: poker,
         imgSrcSet: '/_next/image?url=%2Fimages%2FPolukoshko_still.png&w=384&q=75 1x, /_next/image?url=%2Fimages%2FPolukoshko_still.png&w=640&q=75 2x',
         skills: [],
-        techs: [],
+        techs: ['socket.io', 'mongodb', 'mongoose', 'express', 'jest(server-side game logic', 'Next.js', 'next-auth', 'react', 'CSS', 'HTML', 'Node.js'],
         github: '',
         githubServer: '',
         githubClient: '',
@@ -53,13 +53,13 @@ export const games = [
     },
     {
         title: `Mike's Nerdle!`,
-        description: `I set out to make a Texas Holdem app because I wanted to be able to play friendly poker games with my friends with virtual chips and no hassle.  It was so much fun to make.  The game logic was a wonderfully complex challenge.  I also enjoyed writing tests for the logic as it was a great way to be certain that the game logic was remaining rock solid throughout the development process.`,
+        description: `Recreating the famous Nerdle game was a wonderful challenge. While the game logic might seem simple at first, this challenge grew as I tried to hone in the details. The most notable challenge was allowing the user to win with different permutations of the same equation. For example, "6*3-5=13" and “3*6-5=13" could both be winning guesses. The equation automatically updates at midnight daily. Feel free to play!`,
         gif: '/_next/image?url=%2Fimages%2FnerdleGif.gif&w=640&q=75',
         gifSrcSet: '/_next/image?url=%2Fimages%2FnerdleGif.gif&w=384&q=75 1x, /_next/image?url=%2Fimages%2FnerdleGif.gif&w=640&q=75 2x',
         image: '/_next/image?url=%2Fimages%2FnerdleStill.png&w=640&q=75',
         imgSrcSet: "/_next/image?url=%2Fimages%2FnerdleStill.png&w=384&q=75 1x, /_next/image?url=%2Fimages%2FnerdleStill.png&w=640&q=75 2x",
         skills: [],
-        techs: [],
+        techs: ['React', 'Math.js', 'Day.js', 'CSS', 'HTML', 'Javasctipt'],
         github: 'https://github.com/mseaman26/Mike-s-Nerdle',
         alt: `preview of Mike's Nerdle!`,
         link: 'https://mseaman26.github.io/Mike-s-Nerdle/'
@@ -82,7 +82,7 @@ export const games = [
 export const otherProjects = [
     {
         title: `Baseball Grapher`,
-        description: shortLorem+shortLorem+shortLorem,
+        description: `This app combines my love for baseball (go Giabnts) and my love for coding. It uses web-scraping to gather win/loss/day-off data from the current baseball season. It then displays this data in a fun graph that lets you see the divisional standings over time! A great way to see a visual representation of the baseball season! Please keep in mind that this project is deployed to Heroku on "Hobby Tier" and may take a few seconds to load`,
         gif: '',
         gifSrcSet: '',
         image: baseballStill,

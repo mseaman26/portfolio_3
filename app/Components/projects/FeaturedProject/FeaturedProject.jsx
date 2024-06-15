@@ -9,6 +9,11 @@ import Link from 'next/link'
 const FeaturedProject = ({id, gif, image, title, description, link, github, alt, techs, githubServer, githubClient, index}) => {
 
     const [imageDisplay, setImageDisplay] = useState('inline')
+    const [gifLoaded, setGifLoaded] = useState(false);
+
+  const handleGifLoad = () => {
+    setGifLoaded(true);
+  }
 
     useEffect(() => {
         if(gif){
@@ -23,24 +28,25 @@ const FeaturedProject = ({id, gif, image, title, description, link, github, alt,
         <div className={styles.container}>
             <div className={styles.imageAndInfo}>
                 <div className={styles.imageAndGif}>
-                    <div className={styles.gifContainer}>
+                    <div className={`${styles.gifContainer} ${gifLoaded ? '' : styles.hidden}`}>
                     <a href={link} target='_blank'>  
                     <Image 
-                    src={gif ? gif : image} 
+                    src={gif} 
                     loading="lazy"
                     decoding='async'
                     data-nimg='1'
                     width={600} 
                     height={600} 
                     alt={alt} 
-                    className={styles.gif}
+                    className={`${styles.gif}`}
+                    onLoadingComplete={handleGifLoad}
                     />
                     </a> 
                     </div>
-                    {/* <div className={styles.imageContainer}>
+                    <div className={`${styles.imageContainer} ${gifLoaded ? styles.hidden : ''}`}>
                         <a href={link} target='_blank'>
                         <Image 
-                            className={styles.stillImage} 
+                            className={`${styles.stillImage}`} 
                             loading="lazy"
                             decoding='async'
                             data-nimg='1' 
@@ -50,7 +56,7 @@ const FeaturedProject = ({id, gif, image, title, description, link, github, alt,
                             alt={alt}>
                         </Image>
                         </a>
-                    </div> */}
+                    </div>
                 </div>
                 <div className={styles.info}>
                     <h2 className={styles.title}>{title}</h2>

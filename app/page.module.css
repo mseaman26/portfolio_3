@@ -45,6 +45,12 @@
     font-size: 30px;
     text-align: center;
 }
+.moreProjectsSubheader{
+    text-align: center;
+    margin: 0px;
+    display: none;
+    margin-bottom: var(--paddingSmall);
+}
 .aboutMe    {
     font-size: 20px;
     font-weight: 300;
@@ -99,6 +105,9 @@
 @media screen and (max-width: 576px) {
     .container h1{
         font-size: 36px;
+    }
+    .moreProjectsSubheader{
+        display: block;
     }
 } 
 

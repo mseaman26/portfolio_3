@@ -102,6 +102,7 @@ export default function Home() {
               />
           </div> */}
         <h2 className={styles.featuredProjectHeader}>More Projects</h2>
+        <h6 className={styles.moreProjectsSubheader}>{`(swipe left or right for more)`}</h6>
         <section className={styles.carouselSection}>
           <EmblaCarousel projects={projects} options={OPTIONS} />
         </section>
