@@ -18,6 +18,7 @@
     flex-wrap: wrap;
     justify-content: center;
     margin-top: var(--paddingSmall);
+    padding-bottom: var(--paddingSmall);
 }
 .button{
     padding: var(--paddingSmall);
@@ -26,6 +27,8 @@
     text-align: center;
     margin-inline: var(--paddingSmall);
     transition: transform 0.3s ease-in-out;
+    max-height: 48px;
+    font-size: 16px;
 }
 .button:hover{
     transform: scale(1.1);
@@ -39,9 +42,10 @@
 .learnMore{
     background-color: var(--success);
 }
-.icon{
-    font-size: inherit;
+.icon{  
+
 }
+
 .techs{
     display: flex;
     flex-wrap: wrap;

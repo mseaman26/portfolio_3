@@ -1,6 +1,10 @@
 import './globals.css'
 import { Inter, Roboto_Mono} from 'next/font/google'
 import Head from 'next/head';
+import '@fortawesome/fontawesome-svg-core/styles.css';
+// Prevent fontawesome from adding its CSS since we did it manually above:
+import { config } from '@fortawesome/fontawesome-svg-core';
+config.autoAddCss = false; /* eslint-disable import/first */
 
 const inter = Inter({ subsets: ['latin'], variable: '--inter'})
 const chocolateSans = Roboto_Mono({ subsets: ['latin'], variable: '--roboto', weight: '400', display: 'swap'})

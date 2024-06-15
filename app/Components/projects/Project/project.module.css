@@ -55,7 +55,7 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
   padding: var(--paddingSmall);
   border-radius: 10px;
-  box-sizing:initial;
+
 }
 
 @media screen and (max-width:992px) {

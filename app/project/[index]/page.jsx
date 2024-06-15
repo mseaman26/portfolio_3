@@ -4,6 +4,7 @@ import styles from './Project.module.css'
 import Link from "next/link";
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+//the font awesome icon was acting wierd until i added a couple imports to the layout.  thanks stack overflow
 
 
 const ProjectPage = ({params}) => {
@@ -16,6 +17,10 @@ const ProjectPage = ({params}) => {
   const githubClient = project.githubClient
   console.log(params)
   return <div className={`page ${styles.container}`}>
+    <div style={{width: '100%'}}>
+      <a className={`${styles.button} ${styles.repoLink}`} href="/">&larr; Back</a>
+    </div>
+    
     <h1>{project.title}</h1>
     <a href={project.link} className={styles.imageContainer} target="_blank">
       <div >
@@ -24,7 +29,7 @@ const ProjectPage = ({params}) => {
     </a>
     <p>{project.description }</p> 
     <div className={styles.buttons}>
-                {link && 
+    {link && 
                     <a className={`${styles.button} ${styles.liveSite}`} href={link} target='_blank'>Visit Live Site</a>
                 }
                 {github && 

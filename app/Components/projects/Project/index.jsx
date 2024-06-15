@@ -30,7 +30,15 @@ const Project = ({id, gif, image, title, description, link, github, alt, techs})
                         alt={alt} 
                         srcset={Project.imgSrcSet}/>
                     }
-                    <Image className={styles.stillImage} src={image} width={300} height={300} style={{display: gif ? imageDisplay : 'inline'}} alt={alt}></Image>
+                    <Image loading="lazy"
+                        decoding='async'
+                        data-nimg='1' 
+                        className={styles.stillImage} 
+                        src={image} 
+                        width={300} height={300} 
+                        style={{display: gif ? imageDisplay : 'inline'}} 
+                        alt={alt}>
+                    </Image>
                 </div>
                 <div>
                     <p>{description}</p>
