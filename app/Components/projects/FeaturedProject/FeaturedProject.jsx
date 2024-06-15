@@ -32,9 +32,6 @@ const FeaturedProject = ({id, gif, image, title, description, link, github, alt,
                     <a href={link} target='_blank'>  
                     {gif && <Image 
                     src={gif} 
-                    loading="lazy"
-                    decoding='async'
-                    data-nimg='1'
                     width={600} 
                     height={600} 
                     alt={alt} 
