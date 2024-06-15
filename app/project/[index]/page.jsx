@@ -2,7 +2,8 @@ import { projects } from "@/Lib/projects";
 import Image from "next/image";
 import styles from './Project.module.css'
 import Link from "next/link";
-import Router from 'next/navigation'
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 
 const ProjectPage = ({params}) => {
@@ -16,7 +17,7 @@ const ProjectPage = ({params}) => {
   console.log(params)
   return <div className={`page ${styles.container}`}>
     <h1>{project.title}</h1>
-    <a href={project.link} className={styles.imageContainer}>
+    <a href={project.link} className={styles.imageContainer} target="_blank">
       <div >
         <Image src={image} width={1200} height={1200} className={styles.projectImage}/>
       </div>

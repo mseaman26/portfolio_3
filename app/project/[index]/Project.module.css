@@ -39,6 +39,9 @@
 .learnMore{
     background-color: var(--success);
 }
+.icon{
+    font-size: inherit;
+}
 .techs{
     display: flex;
     flex-wrap: wrap;
