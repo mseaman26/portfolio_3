@@ -3,6 +3,8 @@
 }
 .imageContainer{
     max-width: 500px;
+    width: 100%;
+    aspect-ratio: 1/1;
     height: auto;
 }
 .projectImage{

@@ -16,8 +16,8 @@ const ProjectPage = ({params}) => {
   console.log(params)
   return <div className={`page ${styles.container}`}>
     <h1>{project.title}</h1>
-    <a href={project.link}>
-      <div className={styles.imageContainer}>
+    <a href={project.link} className={styles.imageContainer}>
+      <div >
         <Image src={image} width={1200} height={1200} className={styles.projectImage}/>
       </div>
     </a>
