@@ -70,10 +70,22 @@
         font-size: 36px;
     }
     .nextButton{
-        right: -8%;
+        right: -6%;
     }
     .prevButton{
-        left: -9%;
+        left: -7%;
+    }
+    
+}
+@media screen and (max-width: 350px){
+    .slideButton{
+        font-size: 24px;
+    }
+    .nextButton{
+        right: -6%;
+    }
+    .prevButton{
+        left: -7%;
     }
     
 }
