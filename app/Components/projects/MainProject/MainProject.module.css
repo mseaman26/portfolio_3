@@ -49,6 +49,35 @@
     text-wrap: nowrap;
     margin-top: 0px;
 }
+.buttons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: var(--paddingSmall);
+    padding-bottom: var(--paddingSmall);
+    row-gap: var(--paddingSmall);
+}
+.button{
+    padding: var(--paddingSmall);
+    border-radius: 15px;
+    min-width: 150px;
+    text-align: center;
+    margin-inline: var(--paddingSmall);
+    transition: transform 0.3s ease-in-out;
+}
+.button:hover{
+    transform: scale(1.1);
+}
+.liveSite{
+    background-color: var(--primary);
+}
+.repoLink{
+    background-color: var(--secondary);
+}
+.learnMore{
+    background-color: var(--success);
+}
+
 
 @media screen and (max-width: 768px) {
     .container{

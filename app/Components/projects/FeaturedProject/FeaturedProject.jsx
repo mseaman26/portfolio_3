@@ -2,7 +2,7 @@
 import Image from 'next/image'
 import { useState, useEffect } from 'react'
 import styles from './featuredProjects.module.css'
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Link from 'next/link'
 
@@ -85,11 +85,11 @@ const FeaturedProject = ({id, gif, image, title, description, link, github, alt,
                 }
                 {
                     githubServer &&
-                    <a className={`${styles.button} ${styles.repoLink}`}  href={githubServer} target='_blank'>Visit Server Repo</a>
+                    <a className={`${styles.button} ${styles.repoLink}`}  href={githubServer} target='_blank'><FontAwesomeIcon icon={faGithub} className={styles.icon}/>Visit Server Repo</a>
                 }
                 {
                     githubClient &&
-                    <a className={`${styles.button} ${styles.repoLink}`}  href={github  } target='_blank'>Visit Client Repo</a>
+                    <a className={`${styles.button} ${styles.repoLink}`}  href={github  } target='_blank'><FontAwesomeIcon icon={faGithub} className={styles.icon}/>Visit Client Repo</a>
                 }
                 {
                     <Link className={`${styles.button} ${styles.learnMore}`} href={`/project/${index}`} >Learn More</Link>

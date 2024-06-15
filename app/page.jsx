@@ -66,6 +66,8 @@ export default function Home() {
           alt={games[0].alt}
           skills={games[0].skills}
           techs={games[0].techs}
+          githubServer={games[0].githubServer}
+          githubClient={games[0].githubClient}
         />
  
         <h2 className={styles.featuredProjectHeader}>More Projects</h2>

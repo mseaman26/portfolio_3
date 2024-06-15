@@ -46,8 +46,8 @@ export const games = [
         skills: [],
         techs: ['socket.io', 'mongodb', 'mongoose', 'express', 'jest(server-side game logic', 'Next.js', 'next-auth', 'react', 'CSS', 'HTML', 'Node.js'],
         github: '',
-        githubServer: '',
-        githubClient: '',
+        githubServer: 'https://github.com/mseaman26/poker-server',
+        githubClient: 'https://github.com/mseaman26/poker',
         alt:'preview of the polukoshko website',
         link: 'https://poker-taupe-one.vercel.app/'
     },
@@ -95,4 +95,4 @@ export const otherProjects = [
     }, 
 ]
 
-export const projects = [websites[0],games[1], websites[1], otherProjects[0]]
+export const projects = [websites[0],games[1], websites[1], otherProjects[0], games[0]]

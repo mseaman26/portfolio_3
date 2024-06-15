@@ -33,7 +33,9 @@ export default function Caurosel(props) {
             <div className={`${styles.slideButton} ${styles.prevButton}`} onClick={onPrevButtonClick}>&lt;</div>
             <div className="embla__viewport" ref={emblaRef}>
                 <div className="embla__container">
-                {projects.map((project, index) => (
+                {projects.map((project, index) => {if(index === projects.length - 1) return null
+
+                    return (
                     <div className="embla__slide" key={`slide_${index}`}>
                         <div className={styles.slideWrapper}>
                             
@@ -52,7 +54,7 @@ export default function Caurosel(props) {
                             
                         </div>
                     </div>
-                ))}
+                )})}
                 </div>
             </div>
 

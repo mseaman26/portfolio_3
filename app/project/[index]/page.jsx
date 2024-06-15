@@ -37,11 +37,11 @@ const ProjectPage = ({params}) => {
                 }
                 {
                     githubServer &&
-                    <a className={`${styles.button} ${styles.repoLink}`}  href={githubServer} target='_blank'>Visit Server Repo</a>
+                    <a className={`${styles.button} ${styles.repoLink}`}  href={githubServer} target='_blank'><FontAwesomeIcon icon={faGithub} className={styles.icon}/> Visit Server Repo</a>
                 }
                 {
                     githubClient &&
-                    <a className={`${styles.button} ${styles.repoLink}`}  href={github  } target='_blank'>Visit Client Repo</a>
+                    <a className={`${styles.button} ${styles.repoLink}`}  href={github  } target='_blank'><FontAwesomeIcon icon={faGithub} className={styles.icon}/> Visit Client Repo</a>
                 }
                 {
                     <Link className={`${styles.button} ${styles.learnMore}`} href={`/project/${index}`} >Learn More</Link>
