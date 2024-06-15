@@ -102,6 +102,16 @@
     margin-bottom: var(--paddingMedium);
 
 }
+.contactSection{
+    padding: var(--paddingSmall);
+}
+.contactMe{
+    font-size: 18px;
+    margin-bottom: 0px;
+}
+.contactLink{
+    color: var(--primary);
+}
 @media screen and (max-width: 576px) {
     .container h1{
         font-size: 36px;

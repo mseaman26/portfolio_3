@@ -18,7 +18,7 @@ const ProjectPage = ({params}) => {
   console.log(params)
   return <div className={`page ${styles.container}`}>
     <div style={{width: '100%'}}>
-      <a className={`${styles.button} ${styles.repoLink}`} href="/">&larr; Back</a>
+      <a className={`${styles.button} ${styles.repoLink}`} style={{margin: '0px'}} href="/">&larr; Back</a>
     </div>
     
     <h1>{project.title}</h1>

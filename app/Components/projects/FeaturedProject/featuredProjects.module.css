@@ -133,13 +133,14 @@
         width: 100%;
     }
     .buttons{
-        gap: var(--paddingSmall);
+        gap: 5px;
+        
     }
     .button{
         font-size: 14px;
         padding-block: var(--paddingSmall);
         padding-inline: (5px);
         min-width: 0px;
-       
+        margin-inline: 0px;
     }
 }
