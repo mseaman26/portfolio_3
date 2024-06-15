@@ -82,7 +82,7 @@ export const games = [
 export const otherProjects = [
     {
         title: `Baseball Grapher`,
-        description: `This app combines my love for baseball (go Giabnts) and my love for coding. It uses web-scraping to gather win/loss/day-off data from the current baseball season. It then displays this data in a fun graph that lets you see the divisional standings over time! A great way to see a visual representation of the baseball season! Please keep in mind that this project is deployed to Heroku on "Hobby Tier" and may take a few seconds to load`,
+        description: `This app combines my love for baseball (go Giants) and my love for coding. It uses web-scraping to gather win/loss/day-off data from the current baseball season. It then displays this data in a fun graph that lets you see the divisional standings over time! A great way to see a visual representation of the baseball season! Please keep in mind that this project is deployed to Heroku on "Hobby Tier" and may take a few seconds to load`,
         gif: '',
         gifSrcSet: '',
         image: baseballStill,

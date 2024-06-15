@@ -66,46 +66,13 @@ export default function Home() {
           skills={games[0].skills}
           techs={games[0].techs}
         />
-        {/* <div className={styles.FeaturedProjects}>
-          <FeaturedProject 
-              gif={games[0].gif} 
-              image={games[0].image}
-              title ={games[0].title} 
-              description={games[0].description} 
-              link={games[0].link} 
-              github={games[0].github} 
-              alt={games[0].alt}
-              skills={games[0].skills}
-              techs={games[0].techs}
-              />
-              <FeaturedProject 
-              gif={games[1].gif} 
-              image={games[1].image}
-              title ={games[1].title} 
-              description={games[1].description} 
-              link={games[1].link} 
-              github={games[1].github} 
-              alt={games[1].alt}
-              skills={games[1].skills}
-              techs={games[1].techs}
-              />
-              <FeaturedProject 
-              gif={websites[0].gif} 
-              image={websites[0].image}
-              title ={websites[0].title} 
-              description={websites[0].description} 
-              link={websites[0].link} 
-              github={websites[0].github} 
-              alt={websites[0].alt}
-              skills={websites[0].skills}
-              techs={websites[0].techs}
-              />
-          </div> */}
+ 
         <h2 className={styles.featuredProjectHeader}>More Projects</h2>
         <h6 className={styles.moreProjectsSubheader}>{`(swipe left or right for more)`}</h6>
         <section className={styles.carouselSection}>
           <EmblaCarousel projects={projects} options={OPTIONS} />
         </section>
+        <h2 className={styles.featuredProjectHeader}>Let's get in touch!</h2>
         
       </div>
       <div>

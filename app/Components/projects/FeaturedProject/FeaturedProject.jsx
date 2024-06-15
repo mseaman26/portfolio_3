@@ -30,7 +30,7 @@ const FeaturedProject = ({id, gif, image, title, description, link, github, alt,
                 <div className={styles.imageAndGif}>
                     <div className={`${styles.gifContainer} ${gifLoaded ? '' : styles.hidden}`}>
                     <a href={link} target='_blank'>  
-                    <Image 
+                    {gif && <Image 
                     src={gif} 
                     loading="lazy"
                     decoding='async'
@@ -40,7 +40,7 @@ const FeaturedProject = ({id, gif, image, title, description, link, github, alt,
                     alt={alt} 
                     className={`${styles.gif}`}
                     onLoadingComplete={handleGifLoad}
-                    />
+                    />}
                     </a> 
                     </div>
                     <div className={`${styles.imageContainer} ${gifLoaded ? styles.hidden : ''}`}>
