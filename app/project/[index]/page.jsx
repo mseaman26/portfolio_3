@@ -24,7 +24,7 @@ const ProjectPage = ({params}) => {
     <h1>{project.title}</h1>
     <a href={project.link} className={styles.imageContainer} target="_blank">
       <div >
-        <Image src={image} width={1200} height={1200} className={styles.projectImage}/>
+        <Image src={image} width={600} height={600} className={styles.projectImage}/>
       </div>
     </a>
     <p>{project.description }</p> 
