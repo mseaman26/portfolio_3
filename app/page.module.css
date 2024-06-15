@@ -44,6 +44,7 @@
     font-weight: 800;
     font-size: 30px;
     text-align: center;
+    margin-bottom: var(--paddingMedium);
 }
 .moreProjectsSubheader{
     text-align: center;

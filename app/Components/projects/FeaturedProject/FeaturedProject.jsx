@@ -28,7 +28,7 @@ const FeaturedProject = ({id, gif, image, title, description, link, github, alt,
         <div className={styles.container}>
             <div className={styles.imageAndInfo}>
                 <div className={styles.imageAndGif}>
-                    <div className={`${styles.gifContainer} ${gifLoaded ? '' : styles.hidden}`}>
+                    <div className={`${styles.gifContainer} ${gifLoaded ? '' : styles.hidden}` } style={!gifLoaded ? {position: 'absolute', height: 0, width: 0, zIndex: 0} : {}}>
                     <a href={link} target='_blank'>  
                     {gif && <Image 
                     src={gif} 
@@ -43,8 +43,8 @@ const FeaturedProject = ({id, gif, image, title, description, link, github, alt,
                     />}
                     </a> 
                     </div>
-                    <div className={`${styles.imageContainer} ${gifLoaded ? styles.hidden : ''}`}>
-                        <a href={link} target='_blank'>
+                    <div className={`${styles.imageContainer} ${gifLoaded ? styles.hidden : ''}`} style={gifLoaded ? {position: 'absolute', height: 0, width: 0, zIndex: 0} : {}}>
+                        <a href={gifLoaded ? '' : link} target='_blank' >
                         <Image 
                             className={`${styles.stillImage}`} 
                             loading="lazy"
@@ -58,6 +58,7 @@ const FeaturedProject = ({id, gif, image, title, description, link, github, alt,
                         </a>
                     </div>
                 </div>
+                
                 <div className={styles.info}>
                     <h2 className={styles.title}>{title}</h2>
                     <p className={styles.description}>{description}</p>
@@ -77,6 +78,7 @@ const FeaturedProject = ({id, gif, image, title, description, link, github, alt,
                     }
                 </div> */}
             </div>
+           
             <div className={styles.buttons}>
                 {link && 
                     <a className={`${styles.button} ${styles.liveSite}`} href={link} target='_blank'>Visit Live Site</a>

@@ -76,7 +76,7 @@ export default function Home() {
         <h2 className={styles.featuredProjectHeader}>Let's get in touch! I'd love to talk about ANYTHING coding-related!</h2>
         <div className={styles.contactSection}>
           <p className={styles.contactMe}>Feel free to email me at:<br/> <a className={styles.contactLink} href='mailto:mseaman26@gmail.com'>mseaman26@gmail.com</a></p>
-          <p className={styles.contactMe}>You can view and/or download my resume<br/> <a className={styles.contactLink} href='https://docs.google.com/document/d/1aHOgJrOeMHXgQopKNYulgnNEfvE55DVrbeCR2yirUqA/edit' target='_blank'>HERE</a></p>
+          <p className={styles.contactMe}>You can view and/or download my resume <br/> <a className={styles.contactLink} href='https://docs.google.com/document/d/1aHOgJrOeMHXgQopKNYulgnNEfvE55DVrbeCR2yirUqA/edit' target='_blank'>HERE</a></p>
         </div>
         <div className={styles.socials}>
           <a href='https://github.com/mseaman26' target='_blank'><FontAwesomeIcon icon={faGithub} className={styles.icon} /></a>
