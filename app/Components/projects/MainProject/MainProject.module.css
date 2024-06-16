@@ -78,6 +78,21 @@
     background-color: var(--success);
 }
 
+@media screen and (max-width: 576px){
+    .buttons{
+        gap: 5px;
+        
+    }
+    .button{
+        font-size: 14px;
+        padding-block: var(--paddingSmall);
+        padding-inline: (5px);
+        min-width: 126px;
+        margin-inline: 0px;
+        
+    }
+}
+
 
 @media screen and (max-width: 768px) {
     .container{
