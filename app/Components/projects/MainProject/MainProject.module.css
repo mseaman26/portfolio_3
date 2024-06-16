@@ -20,7 +20,7 @@
     z-index: 1;
     cursor: pointer;
     transition: transform 0.3s ease;
-    padding: var(--paddingSmall);
+
     
 }
 .mainGifContainer img, .mainImageContainer img{
