@@ -161,6 +161,6 @@
         padding-block: var(--paddingSmall);
         padding-inline: (5px);
         min-width: 0px;
-        margin-inline: 0px;
+        margin-inline: 5px;
     }
 }
