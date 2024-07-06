@@ -82,16 +82,16 @@ export const games = [
 export const otherProjects = [
     {
         title: `Baseball Grapher`,
-        description: `This app combines my love for baseball (go Giants) and my love for coding. It uses web-scraping to gather win/loss/day-off data from the current baseball season. It then displays this data in a fun graph that lets you see the divisional standings over time! A great way to see a visual representation of the baseball season! Please keep in mind that this project is deployed to Heroku on "Hobby Tier" and may take a few seconds to load`,
+        description: `This app combines my love for baseball (go Giants) and my love for coding. It uses web-scraping to gather win/loss/day-off data from the current baseball season. It then displays this data in a fun graph that lets you see the divisional standings over time! A great way to see a visual representation of the baseball season. I'm excited to expand on this idea!`,
         gif: '',
         gifSrcSet: '',
         image: baseballStill,
         imgSrcSet: "/_next/image?url=%2Fimages%2FbaseballGrapherScreenShot.png&w=384&q=75 1x, /_next/image?url=%2Fimages%2FbaseballGrapherScreenShot.png&w=640&q=75 2x",
         skills: [],
         techs: [],
-        github: 'https://github.com/mseaman26/Baseball-Grapher',
+        github: 'https://github.com/mseaman26/baseball-grapher-2',
         alt: `preview of Mike's Wordle!`,
-        link: 'https://baseball-grapher.herokuapp.com/'
+        link: 'https://baseball-grapher-2.vercel.app/'
     }, 
 ]
 

@@ -10,6 +10,8 @@
 .mainImageContainer{
     position: relative;
     border: 1px solid var(--textSecondary);
+    background-color: black;
+    padding: 5px;
 }
 .mainGifContainer, .mainImageContainer{
     position: relative;
