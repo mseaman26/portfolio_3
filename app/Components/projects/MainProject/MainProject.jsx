@@ -86,4 +86,5 @@ const MainProject = ({id, gif, image, title, description, link, github, alt, tec
     )
 }
 
+
 export default MainProject

@@ -1,7 +1,7 @@
 :root{
   /* --offBlack: #333333; */
   --offBlack: rgba(15, 20, 25);
-  --offWhite: #eeeded;
+  --offWhite: #cfcfcf;
   --almostBlack: #050505;
   --active: #FFD233;
   --textSecondary: rgba(131, 156, 186);
@@ -34,6 +34,7 @@ body{
   background-color: var(--offBlack);
   padding-top: var(--paddingMedium);
   color: var(--offWhite);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
   min-height: calc(100vh - 80px);
   display: flex;
   flex-direction: column;

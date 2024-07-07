@@ -1,0 +1,40 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+
+}
+
+.videoContainer{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.videoWrapper{
+    width: fit-content;
+    height: fit-content;
+}
+.videoInfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+@media screen and (max-width: 576px){
+    .container{
+        flex-direction: column;
+    }
+    .videoContainer{
+        width: 100%;
+    }
+    .videoInfo{
+        width: 100%;
+    }
+    
+}
