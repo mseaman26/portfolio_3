@@ -110,7 +110,7 @@
     flex-wrap: wrap;
     justify-content: center;
     margin-top: var(--paddingSmall);
-    padding-bottom: var(--paddingSmall);
+    padding-bottom: var(--paddingMedium);
 }
 .button{
     padding: var(--paddingSmall);

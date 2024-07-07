@@ -41,7 +41,7 @@ export default function VideoCaurosel(props) {
       } = usePrevNextButtons(emblaApi)
     console.log(videos)
     return (
-        <section className={`embla ${styles.embla}`}>
+        <section className={`embla ${styles.embla}`} style={{borderTop: 'none'}}>
             <div className={`${styles.slideButton} ${styles.prevButton}`} onClick={onPrevButtonClick}>&lt;</div>
             <div className="embla__viewport" ref={emblaRef}>
                 <div className="embla__container">

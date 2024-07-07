@@ -109,15 +109,19 @@ export default function Home() {
           />
         </motion.div>
         {/* <YouTube videoId="dWHTNNThbyg" opts={{width: '50%', height: '300px'}}/> */}
-        <h2 className={styles.featuredProjectHeader}>Check out some of my coding tutorial videos!</h2>
+        <h2 className={styles.featuredProjectHeader}
+
+        >Check out some of my coding tutorial videos!</h2>
         <section className={styles.carouselSection}>
           <VideoCaurosel videos={videos} options={OPTIONS} />
         </section>
+
         <h2 className={styles.featuredProjectHeader}>More Projects</h2>
         <h6 className={styles.moreProjectsSubheader}>{`(swipe left or right for more)`}</h6>
         <section className={styles.carouselSection}>
           <EmblaCarousel projects={projects} options={OPTIONS} />
         </section>
+        
         <h2 className={styles.featuredProjectHeader}>Let's get in touch! I'd love to talk about ANYTHING coding-related!</h2>
         <div className={styles.contactSection}>
           <p className={styles.contactMe}>Feel free to email me at:<br/> <a className={styles.contactLink} href='mailto:mseaman26@gmail.com'>mseaman26@gmail.com</a></p>
