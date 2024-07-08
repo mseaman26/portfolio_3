@@ -62,8 +62,8 @@ export default function VideoCaurosel(props) {
                                     </div>
                                 </div>
                                 <div className={videoStyles.videoInfo}>
-                                    <h2>{videos[index].title}</h2>
-                                    <p>{videos[index].description}</p>
+                                    <h2 className={videoStyles.title}>{videos[index].title}</h2>
+                                    <p className={videoStyles.description}>{videos[index].description}</p>
                                 </div>
                             </div>
                             
