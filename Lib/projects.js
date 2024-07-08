@@ -8,7 +8,7 @@ export const websites = [
 
     {
         title: 'Dr Polukoshko, Optometrist',
-        description: ` A professional website built with a friend/collaborator for an optometrist based in Reno. We used Next.js and focused heavily on server-side rendering and SEO. Appointment booking is handled by utilizing the Revintake platform`,
+        description: ` A professional website built with a friend/collaborator for an optometrist based in Reno. This demonstrates my ability to follow a design to the pixel. We used Next.js and focused heavily on server-side rendering and SEO. Appointment booking is handled by utilizing the Revintake platform`,
         // gif: '/_next/image?url=%2Fimages%2FDrPolukoshkoOptometrist-ezgif.com-optimize.gif&w=640&q=75',
         gif: polukoshkoGif,
         gifSrcSet: '/_next/image?url=%2Fimages%2FDrPolukoshkoOptometrist-ezgif.com-optimize.gif&w=384&q=75 1x, /_next/image?url=%2Fimages%2FDrPolukoshkoOptometrist-ezgif.com-optimize.gif&w=640&q=75 2x',

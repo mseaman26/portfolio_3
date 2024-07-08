@@ -21,18 +21,17 @@ export default function Home() {
   const [headShotDone, setHeadShotDone] = useState(false);
   const [headerDone, setHeaderDone] = useState(false);
   const [paragraphDone, setParagraphDone] = useState(false);
+  const [shouldAnimate, setShouldAnimate] = useState(false);
 
-  // useEffect(() => {
-  //   if (headshotref.current && headshotref.current.complete) {
-  //     setHeadshotLoaded(true);
-  //   }
-  // }, [headshotref.current]);
+  useEffect(() => {
+    const navigationType = performance.getEntriesByType('navigation')[0]?.type;
+    const isInitialLoad = navigationType === 'navigate';
+    const isPageTop = window.scrollY === 0;
 
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //     setHeadshotLoaded(true)
-  //   }, 2000);
-  // }, [])
+    if (isInitialLoad && isPageTop) {
+      setShouldAnimate(true);
+    }
+  }, []);
 
   const handleImageLoad = () => {
     setHeadshotLoaded(true);
@@ -72,21 +71,21 @@ export default function Home() {
       </div>
       <div className={styles.content} >
         <motion.h1 className={styles.pageHeader}
-          initial={{ opacity: 0, x: '20vw' }} // Initial position and opacity
-          animate={headShotDone ? { opacity: 1, x: 0 } : {}} // Final position and opacity
+          initial={shouldAnimate ? { opacity: 0, x: '20vw' } : {}} // Initial position and opacity
+          animate={headShotDone && shouldAnimate ? { opacity: 1, x: 0 } : {}} // Final position and opacity
           transition={{ ease: 'easeInOut', duration: .15 }} // Animation easing and duration
           onAnimationComplete={handleHeaderDone}
         >Hi, I'm Mike</motion.h1>
         <motion.p className={styles.aboutMe} 
-          initial={{ opacity: 0, x: '-20vw' }} // Initial position and opacity
-          animate={headerDone ? { opacity: 1, x: 0 } : {}} // Final position and opacity
+          initial={shouldAnimate ? { opacity: 0, x: '-20vw' } : {}} // Initial position and opacity
+          animate={headerDone && shouldAnimate ? { opacity: 1, x: 0 } : {}} // Final position and opacity
           transition={{ ease: 'easeInOut', duration: .15 }} // Animation easing and duration
           onAnimationComplete={handleParagraphDone}
         
         >I'm a passionate Full-Stack Developer with a knack for all things web development and debugging. With a keen eye for detail and a love for solving complex problems, I strive to create efficient, robust, and user-friendly web applications. Whether it's front-end design or back-end architecture, I'm dedicated to delivering high-quality solutions that meet and exceed user expectations. Please have a look at some of my work below!</motion.p>
         <motion.div
-          initial={{ x: '100vw' }} // Initial position and opacity
-          animate={headerDone ? { opacity: 1, x: 0 } : {}} // Final position and opacity
+          initial={shouldAnimate ? { x: '100vw' } : {}} // Initial position and opacity
+          animate={headerDone && shouldAnimate ? { opacity: 1, x: 0 } : {}} // Final position and opacity
           transition={{ ease: 'easeInOut', duration: 1 }} // Animation easing and duration
           onAnimationComplete={handleParagraphDone}
         >

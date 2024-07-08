@@ -1,5 +1,5 @@
-
-import React, {useState} from 'react'
+'use client'
+import React, {useRef, useEffect} from 'react'
 import Image from 'next/image';
 import useEmblaCarousel from 'embla-carousel-react'
 import { DotButton, useDotButton } from './EmblaCarouselDotButton'
@@ -19,6 +19,7 @@ export default function VideoCaurosel(props) {
 
     const {videos, options} = props
     const [emblaRef, emblaApi] = useEmblaCarousel(options)
+    const videoRefs = useRef([]);
     //options for the youtube video
     const opts = {
         height: 'auto',
@@ -40,6 +41,32 @@ export default function VideoCaurosel(props) {
         onNextButtonClick
       } = usePrevNextButtons(emblaApi)
     console.log(videos)
+
+    const onReady = (event, index) => {
+        videoRefs.current[index] = event.target;
+    };
+
+    const onStateChange = (event) => {
+        if (event.data === 1) { // 1 means the video is playing
+            pauseAllVideos(event.target);
+        }
+    };
+
+    const pauseAllVideos = (currentPlayer = null) => {
+        videoRefs.current.forEach((player) => {
+            if (player && player.pauseVideo && player !== currentPlayer) {
+                player.pauseVideo();
+            }
+        });
+    };
+
+    useEffect(() => {
+        const navigationType = performance.getEntriesByType('navigation')[0]?.type;
+        if (navigationType === 'back_forward') {
+          pauseAllVideos();
+        }
+      }, []);
+
     return (
         <section className={`embla ${styles.embla}`} style={{borderTop: 'none'}}>
             <div className={`${styles.slideButton} ${styles.prevButton}`} onClick={onPrevButtonClick}>&lt;</div>
@@ -48,7 +75,7 @@ export default function VideoCaurosel(props) {
                 {videos.map((project, index) => {
 
                     return (
-                    <div className="embla__slide" key={`slide_${index}`}>
+                    <div className="embla__slide" key={`videoSlide_${index}`}>
                         <div className={styles.slideWrapper}>
                             <div className={videoStyles.container}>
                                 <div className={videoStyles.videoContainer}>
@@ -58,6 +85,8 @@ export default function VideoCaurosel(props) {
                                             opts={opts}
                                             id={videos[index].videoId}
                                             style={{width: '100%', height: '100%', position: 'relative', display: 'flex', justifyContent: 'center', alignItems: 'center'}}
+                                            onReady={(event) => onReady(event, index)}
+                                            onStateChange={onStateChange}
                                         />
                                     </div>
                                 </div>
