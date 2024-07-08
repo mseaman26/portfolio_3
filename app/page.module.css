@@ -8,6 +8,7 @@
     align-items: center; 
     padding: var(--paddingMedium);
     min-width: 100vw;
+    overflow-x: hidden;
 }  
 .content{
     display: flex;
