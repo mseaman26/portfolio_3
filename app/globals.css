@@ -29,6 +29,7 @@ body{
   margin: 0;
   background-color: var(--offBlack);
   font-family: var(--mainFont);
+  max-width: 100vw;
 }
 .page{
   background-color: var(--offBlack);
