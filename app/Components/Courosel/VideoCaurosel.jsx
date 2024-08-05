@@ -26,7 +26,7 @@ export default function VideoCaurosel(props) {
         width: '100%',
         playerVars: {
           // https://developers.google.com/youtube/player_parameters
-          autoplay: 1,
+          autoplay: 0,
         },
         aspectRatio: 1
       };
@@ -65,7 +65,7 @@ export default function VideoCaurosel(props) {
         if (navigationType === 'back_forward') {
           pauseAllVideos();
         }
-      }, []);
+    }, []);
 
     return (
         <section className={`embla ${styles.embla}`} style={{borderTop: 'none'}}>
